@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ApuntarIA — Plataforma de estudio inteligente con IA, por Tobias Rozenfeld.">
+    <title>ApuntarIA — Proyecto de Tobias Rozenfeld</title>
+    <link rel="icon" href="https://pbs.twimg.com/profile_images/1069767367452966912/mgpfJsIv_400x400.jpg">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/project-detail.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="nav-wrap">
+            <a href="index.html#hero" class="logo-link">
+                <span class="logo-mark"></span>
+                <span class="logo-text">Tobias Rozenfeld</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html#about">Sobre mí</a>
+                <a href="index.html#stack">Stack</a>
+                <a href="index.html#experience">Experiencia</a>
+                <a href="index.html#projects">Proyectos</a>
+                <a href="index.html#contact">Contacto</a>
+            </nav>
+            <a href="index.html#contact" class="btn btn-primary nav-cta">Contactarme</a>
+            <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO DE PROYECTO -->
+        <section class="project-hero">
+            <div class="project-hero-inner">
+                <a href="index.html#projects" class="project-back"><i class="fa-solid fa-arrow-left"></i> Volver a proyectos</a>
+                <h1 class="project-hero-title">ApuntarIA</h1>
+                <p class="project-hero-desc">
+                    Plataforma web que transforma clases, documentos y material educativo
+                    en recursos de estudio interactivos mediante Inteligencia Artificial:
+                    resúmenes, mapas conceptuales, evaluaciones y un asistente conversacional
+                    disponible las 24 horas.
+                </p>
+            </div>
+        </section>
+
+        <!-- FEATURES -->
+        <section class="section section-dark">
+            <div class="section-header reveal">
+                <span class="eyebrow">Capacidades</span>
+                <h2 class="section-title">Qué resuelve la plataforma</h2>
+            </div>
+
+            <div class="feature-grid">
+                <div class="glass-card feature-card reveal">
+                    <div class="feature-icon"><i class="fa-solid fa-microphone"></i></div>
+                    <h3 class="feature-title">Grabación de clases</h3>
+                    <p class="feature-desc">Graba clases o conferencias desde la plataforma para su transcripción y análisis automático mediante IA.</p>
+                </div>
+                <div class="glass-card feature-card reveal">
+                    <div class="feature-icon"><i class="fa-solid fa-folder-open"></i></div>
+                    <h3 class="feature-title">Carga de archivos</h3>
+                    <p class="feature-desc">Soporta PDF, audio y video, convirtiendo cualquier material en contenido estructurado y fácil de comprender.</p>
+                </div>
+                <div class="glass-card feature-card reveal">
+                    <div class="feature-icon"><i class="fa-brands fa-youtube"></i></div>
+                    <h3 class="feature-title">Procesamiento de YouTube</h3>
+                    <p class="feature-desc">Analiza videos educativos a partir de un link, extrayendo el contenido para generar apuntes y resúmenes.</p>
+                </div>
+                <div class="glass-card feature-card reveal">
+                    <div class="feature-icon"><i class="fa-solid fa-file-lines"></i></div>
+                    <h3 class="feature-title">Resúmenes inteligentes</h3>
+                    <p class="feature-desc">La IA identifica los conceptos más importantes y genera resúmenes claros y optimizados para estudiar.</p>
+                </div>
+                <div class="glass-card feature-card reveal">
+                    <div class="feature-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                    <h3 class="feature-title">Cuadros y mapas conceptuales</h3>
+                    <p class="feature-desc">Organiza la información en estructuras visuales que facilitan comprender la relación entre conceptos.</p>
+                </div>
+                <div class="glass-card feature-card reveal">
+                    <div class="feature-icon"><i class="fa-solid fa-circle-question"></i></div>
+                    <h3 class="feature-title">Evaluaciones automáticas</h3>
+                    <p class="feature-desc">Genera preguntas de práctica, ejercicios y simulacros de examen con respuestas explicadas.</p>
+                </div>
+                <div class="glass-card feature-card reveal">
+                    <div class="feature-icon"><i class="fa-solid fa-comments"></i></div>
+                    <h3 class="feature-title">Asistente conversacional</h3>
+                    <p class="feature-desc">Chat inteligente que responde preguntas usando exclusivamente el contenido procesado de cada clase.</p>
+                </div>
+                <div class="glass-card feature-card reveal">
+                    <div class="feature-icon"><i class="fa-solid fa-layer-group"></i></div>
+                    <h3 class="feature-title">Flashcards de estudio</h3>
+                    <p class="feature-desc">Crea automáticamente tarjetas y conceptos clave para facilitar la memorización y repaso.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECNOLOGÍAS -->
+        <section class="section section-secondary">
+            <div class="glass-card tech-block reveal">
+                <div class="tech-block-title">Tecnologías utilizadas</div>
+                <div class="tech-block-list">
+                    <span>Python</span><span>FastAPI</span><span>OpenAI API</span><span>Whisper</span>
+                    <span>PostgreSQL</span><span>JavaScript</span><span>Procesamiento de Audio</span>
+                    <span>Procesamiento de PDF</span><span>IA Generativa</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CIERRE -->
+        <section class="section section-dark">
+            <div class="project-closing reveal">
+                <p>
+                    ApuntarIA fue concebido como un asistente de estudio inteligente, capaz de
+                    transformar cualquier clase o recurso educativo en material de aprendizaje
+                    listo para usar, optimizando significativamente el proceso de estudio.
+                </p>
+                <div class="project-cta">
+                    <a href="index.html#projects" class="btn btn-outline">Ver más proyectos</a>
+                    <a href="index.html#contact" class="btn btn-primary">Hablemos de tu proyecto</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="logo-mark"></span>
+                &copy; <span id="footer-year">2026</span> Tobias Rozenfeld
+            </div>
+            <div class="footer-links">
+                <a href="index.html#hero">Inicio</a>
+                <a href="index.html#projects">Proyectos</a>
+                <a href="index.html#contact">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/animations.js"></script>
+    <script>
+        document.getElementById("footer-year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

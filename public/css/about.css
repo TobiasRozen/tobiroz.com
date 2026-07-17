@@ -1,0 +1,100 @@
+/* ============================================================
+   ABOUT.CSS — Secciones "Sobre Mi" y "Objetivos"
+   Layout de dos columnas: texto corto + lista de datos clave
+   ============================================================ */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: start;
+}
+
+.about-text .section-description {
+    margin-bottom: 0;
+}
+
+/* Lista de datos clave (reemplaza parrafos largos) */
+.about-facts {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.about-fact {
+    display: flex;
+    gap: 18px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.about-fact:first-child {
+    padding-top: 0;
+}
+
+.about-fact:last-child {
+    border-bottom: none;
+}
+
+.about-fact-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-sm);
+    background: rgba(37, 99, 235, 0.1);
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-light);
+    font-size: 1.1rem;
+}
+
+.about-fact-label {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-secondary);
+    margin-bottom: 4px;
+}
+
+.about-fact-value {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* Objetivos: bloque destacado con tarjeta */
+.objectives-card {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.objectives-lead {
+    grid-column: 1 / -1;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    max-width: 720px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.objective-pillar {
+    padding: 20px;
+    border-radius: var(--radius-sm);
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border);
+}
+
+.objective-pillar h4 {
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    margin-bottom: 6px;
+}
+
+.objective-pillar p {
+    font-size: 0.88rem;
+    margin: 0;
+}

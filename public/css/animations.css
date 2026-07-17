@@ -1,0 +1,57 @@
+/* ============================================================
+   ANIMATIONS.CSS — Animaciones compartidas
+   Fade-in, blur-in y reveal on-scroll (250ms - 600ms, sin excesos)
+   ============================================================ */
+
+/* Elementos comienzan ocultos, y se revelan cuando entran al viewport
+   mediante la clase .is-visible (agregada por js/animations.js) */
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-blur {
+    opacity: 0;
+    filter: blur(6px);
+    transition: opacity 0.5s ease, filter 0.5s ease;
+}
+
+.reveal-blur.is-visible {
+    opacity: 1;
+    filter: blur(0);
+}
+
+.reveal-scale {
+    opacity: 0;
+    transform: scale(0.96);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal-scale.is-visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Escalonado: aplicar delays incrementales a hijos directos */
+.reveal-stagger > * {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal-stagger.is-visible > *:nth-child(1) { transition-delay: 0ms; }
+.reveal-stagger.is-visible > *:nth-child(2) { transition-delay: 80ms; }
+.reveal-stagger.is-visible > *:nth-child(3) { transition-delay: 160ms; }
+.reveal-stagger.is-visible > *:nth-child(4) { transition-delay: 240ms; }
+.reveal-stagger.is-visible > *:nth-child(5) { transition-delay: 320ms; }
+
+.reveal-stagger.is-visible > * {
+    opacity: 1;
+    transform: translateY(0);
+}

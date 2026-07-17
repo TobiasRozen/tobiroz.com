@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PediteUNO — Plataforma inteligente para transporte urbano, por Tobias Rozenfeld.">
+    <title>PediteUNO — Proyecto de Tobias Rozenfeld</title>
+    <link rel="icon" href="https://pbs.twimg.com/profile_images/1069767367452966912/mgpfJsIv_400x400.jpg">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/project-detail.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="nav-wrap">
+            <a href="index.html#hero" class="logo-link">
+                <span class="logo-mark"></span>
+                <span class="logo-text">Tobias Rozenfeld</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html#about">Sobre mí</a>
+                <a href="index.html#stack">Stack</a>
+                <a href="index.html#experience">Experiencia</a>
+                <a href="index.html#projects">Proyectos</a>
+                <a href="index.html#contact">Contacto</a>
+            </nav>
+            <a href="index.html#contact" class="btn btn-primary nav-cta">Contactarme</a>
+            <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO DE PROYECTO -->
+        <section class="project-hero">
+            <div class="project-hero-glow"></div>
+            <div class="project-hero-inner">
+                <a href="index.html#projects" class="project-back"><i class="fa-solid fa-arrow-left"></i> Volver a proyectos</a>
+                <span class="project-eyebrow"><span class="dot"></span> Automatización de transporte</span>
+                <h1 class="project-hero-title">PediteUNO</h1>
+                <p class="project-hero-desc">
+                    Sistema desarrollado en Python y Telegram para la gestión automatizada
+                    de solicitudes de viajes, validación de conductores y administración
+                    centralizada de servicios de transporte.
+                </p>
+            </div>
+        </section>
+
+        <!-- FEATURES -->
+        <section class="section section-dark">
+            <div class="section-header reveal">
+                <span class="eyebrow">Capacidades</span>
+                <h2 class="section-title">Qué resuelve la plataforma</h2>
+            </div>
+
+            <div class="feature-grid">
+                <div class="glass-card feature-card reveal">
+                    <div class="feature-icon"><i class="fa-solid fa-taxi"></i></div>
+                    <h3 class="feature-title">Solicitud automática de viajes</h3>
+                    <p class="feature-desc">Los pasajeros piden un viaje enviando su ubicación en Telegram; el sistema calcula la tarifa y asigna un conductor disponible.</p>
+                </div>
+                <div class="glass-card feature-card reveal">
+                    <div class="feature-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <h3 class="feature-title">Geolocalización inteligente</h3>
+                    <p class="feature-desc">Procesamiento de ubicaciones en tiempo real para determinar cobertura, distancias y optimizar la asignación de viajes.</p>
+                </div>
+                <div class="glass-card feature-card reveal">
+                    <div class="feature-icon"><i class="fa-solid fa-id-card"></i></div>
+                    <h3 class="feature-title">Validación de conductores</h3>
+                    <p class="feature-desc">Registro automatizado mediante carga de DNI, licencia y habilitación vehicular requerida para operar.</p>
+                </div>
+                <div class="glass-card feature-card reveal">
+                    <div class="feature-icon"><i class="fa-solid fa-gauge"></i></div>
+                    <h3 class="feature-title">Panel administrativo</h3>
+                    <p class="feature-desc">Centro de control para aprobar conductores, supervisar operaciones y monitorear toda la actividad de la plataforma.</p>
+                </div>
+                <div class="glass-card feature-card reveal">
+                    <div class="feature-icon"><i class="fa-solid fa-sack-dollar"></i></div>
+                    <h3 class="feature-title">Motor de tarifas dinámicas</h3>
+                    <p class="feature-desc">Cálculo automático según distancia, horarios diurnos/nocturnos y parámetros configurables por ciudad.</p>
+                </div>
+                <div class="glass-card feature-card reveal">
+                    <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3 class="feature-title">Sistema anti-fraude</h3>
+                    <p class="feature-desc">Detección de cancelaciones recurrentes, bloqueos automáticos y registro histórico para auditoría.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECNOLOGÍAS -->
+        <section class="section section-secondary">
+            <div class="glass-card tech-block reveal">
+                <div class="tech-block-title">Tecnologías utilizadas</div>
+                <div class="tech-block-list">
+                    <span>Python</span><span>Telegram Bot API</span><span>SQLite</span>
+                    <span>Automatización de Excel</span><span>Geolocalización</span><span>Generación de Reportes</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CIERRE -->
+        <section class="section section-dark">
+            <div class="project-closing reveal">
+                <p>
+                    PediteUNO fue diseñado como una solución escalable para modernizar servicios
+                    de taxis y remises, automatizando la gestión de pasajeros, conductores y
+                    operaciones comerciales de punta a punta.
+                </p>
+                <div class="project-cta">
+                    <a href="index.html#projects" class="btn btn-outline">Ver más proyectos</a>
+                    <a href="index.html#contact" class="btn btn-primary">Hablemos de tu proyecto</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="logo-mark"></span>
+                &copy; <span id="footer-year">2026</span> Tobias Rozenfeld
+            </div>
+            <div class="footer-links">
+                <a href="index.html#hero">Inicio</a>
+                <a href="index.html#projects">Proyectos</a>
+                <a href="index.html#contact">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/animations.js"></script>
+    <script>
+        document.getElementById("footer-year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

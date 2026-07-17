@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistema de Detección de Objetos con IA — proyecto de Tobias Rozenfeld.">
+    <title>Detección de Objetos — Proyecto de Tobias Rozenfeld</title>
+    <link rel="icon" href="https://pbs.twimg.com/profile_images/1069767367452966912/mgpfJsIv_400x400.jpg">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/project-detail.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="nav-wrap">
+            <a href="index.html#hero" class="logo-link">
+                <span class="logo-mark"></span>
+                <span class="logo-text">Tobias Rozenfeld</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html#about">Sobre mí</a>
+                <a href="index.html#stack">Stack</a>
+                <a href="index.html#experience">Experiencia</a>
+                <a href="index.html#projects">Proyectos</a>
+                <a href="index.html#contact">Contacto</a>
+            </nav>
+            <a href="index.html#contact" class="btn btn-primary nav-cta">Contactarme</a>
+            <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO DE PROYECTO -->
+        <section class="project-hero">
+            <div class="project-hero-glow"></div>
+            <div class="project-hero-inner">
+                <a href="index.html#projects" class="project-back"><i class="fa-solid fa-arrow-left"></i> Volver a proyectos</a>
+                <span class="project-eyebrow"><span class="dot"></span> Computer Vision</span>
+                <h1 class="project-hero-title">Detección de Objetos con IA</h1>
+                <p class="project-hero-desc">
+                    Desarrollo completo de datasets, entrenamiento de modelos de visión
+                    artificial y detección de objetos en tiempo real utilizando Python,
+                    Roboflow y modelos de Machine Learning.
+                </p>
+            </div>
+        </section>
+
+        <!-- FEATURES -->
+        <section class="section section-dark">
+            <div class="section-header reveal">
+                <span class="eyebrow">Capacidades</span>
+                <h2 class="section-title">Qué resuelve el sistema</h2>
+            </div>
+
+            <div class="feature-grid">
+                <div class="glass-card feature-card reveal">
+                    <div class="feature-icon"><i class="fa-solid fa-video"></i></div>
+                    <h3 class="feature-title">Generación de dataset</h3>
+                    <p class="feature-desc">Extracción automática de frames desde videos para construir conjuntos de datos personalizados para entrenamiento.</p>
+                </div>
+                <div class="glass-card feature-card reveal">
+                    <div class="feature-icon"><i class="fa-solid fa-tag"></i></div>
+                    <h3 class="feature-title">Etiquetado y segmentación</h3>
+                    <p class="feature-desc">Clasificación y segmentación de objetos mediante Roboflow, asignando categorías para su reconocimiento automático.</p>
+                </div>
+                <div class="glass-card feature-card reveal">
+                    <div class="feature-icon"><i class="fa-solid fa-brain"></i></div>
+                    <h3 class="feature-title">Entrenamiento de modelos</h3>
+                    <p class="feature-desc">Entrenamiento de modelos personalizados con Python y datasets propios para detección optimizada.</p>
+                </div>
+                <div class="glass-card feature-card reveal">
+                    <div class="feature-icon"><i class="fa-solid fa-box"></i></div>
+                    <h3 class="feature-title">Generación de modelos .pt</h3>
+                    <p class="feature-desc">Modelos entrenados capaces de reconocer y diferenciar objetos según las categorías definidas.</p>
+                </div>
+                <div class="glass-card feature-card reveal">
+                    <div class="feature-icon"><i class="fa-solid fa-camera"></i></div>
+                    <h3 class="feature-title">Detección en tiempo real</h3>
+                    <p class="feature-desc">Análisis de video en vivo o grabado, identificando objetos automáticamente y mostrando resultados al instante.</p>
+                </div>
+                <div class="glass-card feature-card reveal">
+                    <div class="feature-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                    <h3 class="feature-title">Sistemas de alertas</h3>
+                    <p class="feature-desc">Avisos automáticos cuando se detectan eventos, acciones u objetos específicos definidos por el cliente.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECNOLOGÍAS -->
+        <section class="section section-secondary">
+            <div class="glass-card tech-block reveal">
+                <div class="tech-block-title">Tecnologías utilizadas</div>
+                <div class="tech-block-list">
+                    <span>Python</span><span>Roboflow</span><span>Computer Vision</span>
+                    <span>Machine Learning</span><span>OpenCV</span><span>YOLO</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CIERRE -->
+        <section class="section section-dark">
+            <div class="project-closing reveal">
+                <p>
+                    Esta solución permite automatizar procesos de monitoreo, inspección y
+                    control mediante cámaras, transformando imágenes y videos en información
+                    útil para la toma de decisiones.
+                </p>
+                <div class="project-cta">
+                    <a href="index.html#projects" class="btn btn-outline">Ver más proyectos</a>
+                    <a href="index.html#contact" class="btn btn-primary">Hablemos de tu proyecto</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="logo-mark"></span>
+                &copy; <span id="footer-year">2026</span> Tobias Rozenfeld
+            </div>
+            <div class="footer-links">
+                <a href="index.html#hero">Inicio</a>
+                <a href="index.html#projects">Proyectos</a>
+                <a href="index.html#contact">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/animations.js"></script>
+    <script>
+        document.getElementById("footer-year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
