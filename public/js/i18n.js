@@ -83,7 +83,7 @@ const I18N = {
         "proj.apuntaria.name": "ApuntarIA",
         "proj.apuntaria.problem": "Convierte clases y material extenso en apuntes claros y accionables.",
         "proj.apuntaria.desc": "Plataforma web para generar apuntes de estudio asistidos por IA, pensada para estudiantes que necesitan resumir grandes volúmenes de contenido sin perder los conceptos clave.",
-        "proj.apuntaria.cta": "Ver demo",
+        "proj.apuntaria.cta": "Ver detalle",
 
         "proj.telegram.name": "Plataforma para Taxis y Remises",
         "proj.telegram.problem": "Gestiona pedidos de viajes sin necesidad de una app dedicada.",
@@ -300,7 +300,7 @@ const I18N = {
         "proj.apuntaria.name": "ApuntarIA",
         "proj.apuntaria.problem": "Turns lengthy classes and materials into clear, actionable notes.",
         "proj.apuntaria.desc": "A web platform for generating AI-assisted study notes, built for students who need to summarize large volumes of content without losing key concepts.",
-        "proj.apuntaria.cta": "View demo",
+        "proj.apuntaria.cta": "View details",
 
         "proj.telegram.name": "Taxi & Rideshare Platform",
         "proj.telegram.problem": "Manages ride requests without needing a dedicated app.",
