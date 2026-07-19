@@ -51,7 +51,98 @@ const I18N = {
         "stack.title": "Herramientas con las que construyo",
         "stack.desc": "Pasá el mouse sobre cada tecnología para ver dónde la aplico.",
 
-        
+        stackDetails: {
+            python: {
+                title: "Python",
+                desc: "Lenguaje principal utilizado para:",
+                items: ["Backend", "Inteligencia Artificial", "Automatización", "APIs", "Scripts"],
+            },
+            fastapi: {
+                title: "FastAPI",
+                desc: "Framework para construir APIs:",
+                items: ["Alto rendimiento", "Tipado con Pydantic", "Documentación automática"],
+            },
+            react: {
+                title: "React",
+                desc: "Interfaces de usuario:",
+                items: ["Componentes reutilizables", "Estado dinámico", "SPAs modernas"],
+            },
+            nextjs: {
+                title: "Next.js",
+                desc: "Framework de React para producción:",
+                items: ["Renderizado híbrido (SSR/SSG)", "Rutas basadas en archivos", "Optimización de imágenes"],
+            },
+            javascript: {
+                title: "JavaScript",
+                desc: "Lenguaje base para la web:",
+                items: ["Interactividad de interfaz", "Integraciones y APIs", "Automatización de bots"],
+            },
+            typescript: {
+                title: "TypeScript",
+                desc: "JavaScript con tipado estático:",
+                items: ["Menos errores en producción", "Autocompletado y mantenibilidad"],
+            },
+            postgresql: {
+                title: "PostgreSQL",
+                desc: "Base de datos relacional:",
+                items: ["Modelado de datos robusto", "Consultas complejas", "Escalabilidad"],
+            },
+            docker: {
+                title: "Docker",
+                desc: "Contenedores para despliegue:",
+                items: ["Entornos reproducibles", "Despliegue simplificado"],
+            },
+            linux: {
+                title: "Linux",
+                desc: "Sistema operativo de servidores:",
+                items: ["Administración de infraestructura", "Automatización con shell"],
+            },
+            git: {
+                title: "Git",
+                desc: "Control de versiones:",
+                items: ["Trabajo colaborativo", "Historial y ramas de desarrollo"],
+            },
+            openai: {
+                title: "OpenAI API",
+                desc: "Modelos de lenguaje aplicados a:",
+                items: ["Chatbots y asistentes", "Generación de contenido", "Automatización de tareas"],
+            },
+            whisper: {
+                title: "Whisper",
+                desc: "Reconocimiento de voz:",
+                items: ["Transcripción de audio", "Procesamiento de lenguaje hablado"],
+            },
+            yolo: {
+                title: "YOLO",
+                desc: "Detección de objetos en tiempo real:",
+                items: ["Visión artificial", "Modelos entrenados a medida"],
+            },
+            opencv: {
+                title: "OpenCV",
+                desc: "Procesamiento de imágenes:",
+                items: ["Visión por computadora", "Preprocesamiento para modelos IA"],
+            },
+            pytorch: {
+                title: "PyTorch",
+                desc: "Entrenamiento de modelos:",
+                items: ["Redes neuronales", "Fine-tuning de modelos IA"],
+            },
+            huggingface: {
+                title: "HuggingFace",
+                desc: "Ecosistema de modelos IA:",
+                items: ["Modelos preentrenados", "NLP y visión artificial"],
+            },
+            ollama: {
+                title: "Ollama",
+                desc: "Modelos de lenguaje locales:",
+                items: ["Ejecución on-premise", "Privacidad y control de datos"],
+            },
+            cloudflare: {
+                title: "Cloudflare",
+                desc: "Infraestructura web:",
+                items: ["Hosting y CDN", "Seguridad y rendimiento"],
+            },
+        },
 
         "experience.eyebrow": "Experiencia",
         "experience.title": "Trayectoria profesional",
@@ -269,6 +360,99 @@ const I18N = {
         "stack.eyebrow": "Stack",
         "stack.title": "Tools I build with",
         "stack.desc": "Hover over each technology to see where I apply it.",
+        
+        stackDetails: {
+            python: {
+                title: "Python",
+                desc: "Main language used for:",
+                items: ["Backend", "Artificial Intelligence", "Automation", "APIs", "Scripts"],
+            },
+            fastapi: {
+                title: "FastAPI",
+                desc: "Framework for building APIs:",
+                items: ["High performance", "Pydantic typing", "Automatic documentation"],
+            },
+            react: {
+                title: "React",
+                desc: "User interface library:",
+                items: ["Reusable components", "Dynamic state", "Modern SPAs"],
+            },
+            nextjs: {
+                title: "Next.js",
+                desc: "Production framework for React:",
+                items: ["Hybrid rendering (SSR/SSG)", "File-based routing", "Image optimization"],
+            },
+            javascript: {
+                title: "JavaScript",
+                desc: "Core language of the web:",
+                items: ["Interactive interfaces", "API integrations", "Bot automation"],
+            },
+            typescript: {
+                title: "TypeScript",
+                desc: "JavaScript with static typing:",
+                items: ["Fewer production errors", "Autocomplete and maintainability"],
+            },
+            postgresql: {
+                title: "PostgreSQL",
+                desc: "Relational database:",
+                items: ["Robust data modeling", "Complex queries", "Scalability"],
+            },
+            docker: {
+                title: "Docker",
+                desc: "Containers for deployment:",
+                items: ["Reproducible environments", "Simplified deployment"],
+            },
+            linux: {
+                title: "Linux",
+                desc: "Server operating system:",
+                items: ["Infrastructure administration", "Shell automation"],
+            },
+            git: {
+                title: "Git",
+                desc: "Version control:",
+                items: ["Collaborative development", "History and branching"],
+            },
+            openai: {
+                title: "OpenAI API",
+                desc: "Language models applied to:",
+                items: ["Chatbots and assistants", "Content generation", "Task automation"],
+            },
+            whisper: {
+                title: "Whisper",
+                desc: "Speech recognition:",
+                items: ["Audio transcription", "Spoken language processing"],
+            },
+            yolo: {
+                title: "YOLO",
+                desc: "Real-time object detection:",
+                items: ["Computer vision", "Custom-trained models"],
+            },
+            opencv: {
+                title: "OpenCV",
+                desc: "Image processing:",
+                items: ["Computer vision", "Preprocessing for AI models"],
+            },
+            pytorch: {
+                title: "PyTorch",
+                desc: "Model training:",
+                items: ["Neural networks", "AI model fine-tuning"],
+            },
+            huggingface: {
+                title: "HuggingFace",
+                desc: "AI model ecosystem:",
+                items: ["Pretrained models", "NLP and computer vision"],
+            },
+            ollama: {
+                title: "Ollama",
+                desc: "Local language models:",
+                items: ["On-premise execution", "Privacy and data control"],
+            },
+            cloudflare: {
+                title: "Cloudflare",
+                desc: "Web infrastructure:",
+                items: ["Hosting and CDN", "Security and performance"],
+            },
+        },
 
         "experience.eyebrow": "Experience",
         "experience.title": "Professional background",
