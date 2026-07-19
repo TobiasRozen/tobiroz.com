@@ -24,13 +24,18 @@
                 <span class="logo-text">Tobias Rozenfeld</span>
             </a>
             <nav class="nav-links">
-                <a href="https://tobiroz.com/#about">Sobre mí</a>
-                <a href="https://tobiroz.com/#stack">Stack</a>
-                <a href="https://tobiroz.com/#experience">Experiencia</a>
-                <a href="https://tobiroz.com/#projects">Proyectos</a>
-                <a href="https://tobiroz.com/#contact">Contacto</a>
+                <a href="https://tobiroz.com/#about" data-i18n="nav.about">Sobre mí</a>
+                <a href="https://tobiroz.com/#stack" data-i18n="nav.stack">Stack</a>
+                <a href="https://tobiroz.com/#experience" data-i18n="nav.experience">Experiencia</a>
+                <a href="https://tobiroz.com/#projects" data-i18n="nav.projects">Proyectos</a>
+                <a href="https://tobiroz.com/#contact" data-i18n="nav.contact">Contacto</a>
             </nav>
-            <a href="https://tobiroz.com/#contact" class="btn btn-primary nav-cta">Contactarme</a>
+            <button class="lang-switch" id="langSwitch" data-lang="es" aria-label="Cambiar idioma / Switch language">
+                <span class="lang-thumb"></span>
+                <span class="lang-option es">ES</span>
+                <span class="lang-option en">EN</span>
+            </button>
+            <a href="https://tobiroz.com/#contact" class="btn btn-primary nav-cta" data-i18n="nav.cta">Contactarme</a>
             <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
                 <i class="fa-solid fa-bars"></i>
             </button>
@@ -43,9 +48,9 @@
             <div class="project-hero-glow"></div>
             <div class="project-hero-inner">
                 <!-- <a href="https://tobiroz.com/#projects" class="project-back"><i class="fa-solid fa-arrow-left"></i> Volver a proyectos</a> -->
-                <span class="project-eyebrow"><span class="dot"></span> Automatización de transporte</span>
-                <h1 class="project-hero-title">PediteUNO</h1>
-                <p class="project-hero-desc">
+                <span class="project-eyebrow"><span class="dot"></span> <span data-i18n="telegram.eyebrow">Automatización de transporte</span></span>
+                <h1 class="project-hero-title" data-i18n="telegram.hero_title">PediteUNO</h1>
+                <p class="project-hero-desc" data-i18n="telegram.hero_desc">
                     Sistema desarrollado en Python y Telegram para la gestión automatizada
                     de solicitudes de viajes, validación de conductores y administración
                     centralizada de servicios de transporte.
@@ -56,40 +61,40 @@
         <!-- FEATURES -->
         <section class="section section-dark">
             <div class="section-header reveal">
-                <span class="eyebrow">Capacidades</span>
-                <h2 class="section-title">Qué resuelve la plataforma</h2>
+                <span class="eyebrow" data-i18n="telegram.features_eyebrow">Capacidades</span>
+                <h2 class="section-title" data-i18n="telegram.features_title">Qué resuelve la plataforma</h2>
             </div>
 
             <div class="feature-grid">
                 <div class="glass-card feature-card reveal">
                     <div class="feature-icon"><i class="fa-solid fa-taxi"></i></div>
-                    <h3 class="feature-title">Solicitud automática de viajes</h3>
-                    <p class="feature-desc">Los pasajeros piden un viaje enviando su ubicación en Telegram; el sistema calcula la tarifa y asigna un conductor disponible.</p>
+                    <h3 class="feature-title" data-i18n="telegram.f1_title">Solicitud automática de viajes</h3>
+                    <p class="feature-desc" data-i18n="telegram.f1_desc">Los pasajeros piden un viaje enviando su ubicación en Telegram; el sistema calcula la tarifa y asigna un conductor disponible.</p>
                 </div>
                 <div class="glass-card feature-card reveal">
                     <div class="feature-icon"><i class="fa-solid fa-location-dot"></i></div>
-                    <h3 class="feature-title">Geolocalización inteligente</h3>
-                    <p class="feature-desc">Procesamiento de ubicaciones en tiempo real para determinar cobertura, distancias y optimizar la asignación de viajes.</p>
+                    <h3 class="feature-title" data-i18n="telegram.f2_title">Geolocalización inteligente</h3>
+                    <p class="feature-desc" data-i18n="telegram.f2_desc">Procesamiento de ubicaciones en tiempo real para determinar cobertura, distancias y optimizar la asignación de viajes.</p>
                 </div>
                 <div class="glass-card feature-card reveal">
                     <div class="feature-icon"><i class="fa-solid fa-id-card"></i></div>
-                    <h3 class="feature-title">Validación de conductores</h3>
-                    <p class="feature-desc">Registro automatizado mediante carga de DNI, licencia y habilitación vehicular requerida para operar.</p>
+                    <h3 class="feature-title" data-i18n="telegram.f3_title">Validación de conductores</h3>
+                    <p class="feature-desc" data-i18n="telegram.f3_desc">Registro automatizado mediante carga de DNI, licencia y habilitación vehicular requerida para operar.</p>
                 </div>
                 <div class="glass-card feature-card reveal">
                     <div class="feature-icon"><i class="fa-solid fa-gauge"></i></div>
-                    <h3 class="feature-title">Panel administrativo</h3>
-                    <p class="feature-desc">Centro de control para aprobar conductores, supervisar operaciones y monitorear toda la actividad de la plataforma.</p>
+                    <h3 class="feature-title" data-i18n="telegram.f4_title">Panel administrativo</h3>
+                    <p class="feature-desc" data-i18n="telegram.f4_desc">Centro de control para aprobar conductores, supervisar operaciones y monitorear toda la actividad de la plataforma.</p>
                 </div>
                 <div class="glass-card feature-card reveal">
                     <div class="feature-icon"><i class="fa-solid fa-sack-dollar"></i></div>
-                    <h3 class="feature-title">Motor de tarifas dinámicas</h3>
-                    <p class="feature-desc">Cálculo automático según distancia, horarios diurnos/nocturnos y parámetros configurables por ciudad.</p>
+                    <h3 class="feature-title" data-i18n="telegram.f5_title">Motor de tarifas dinámicas</h3>
+                    <p class="feature-desc" data-i18n="telegram.f5_desc">Cálculo automático según distancia, horarios diurnos/nocturnos y parámetros configurables por ciudad.</p>
                 </div>
                 <div class="glass-card feature-card reveal">
                     <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                    <h3 class="feature-title">Sistema anti-fraude</h3>
-                    <p class="feature-desc">Detección de cancelaciones recurrentes, bloqueos automáticos y registro histórico para auditoría.</p>
+                    <h3 class="feature-title" data-i18n="telegram.f6_title">Sistema anti-fraude</h3>
+                    <p class="feature-desc" data-i18n="telegram.f6_desc">Detección de cancelaciones recurrentes, bloqueos automáticos y registro histórico para auditoría.</p>
                 </div>
             </div>
         </section>
@@ -97,7 +102,7 @@
         <!-- TECNOLOGÍAS -->
         <section class="section section-secondary">
             <div class="glass-card tech-block reveal">
-                <div class="tech-block-title">Tecnologías utilizadas</div>
+                <div class="tech-block-title" data-i18n="telegram.tech_title">Tecnologías utilizadas</div>
                 <div class="tech-block-list">
                     <span>Python</span><span>Telegram Bot API</span><span>SQLite</span>
                     <span>Automatización de Excel</span><span>Geolocalización</span><span>Generación de Reportes</span>
@@ -108,14 +113,14 @@
         <!-- CIERRE -->
         <section class="section section-dark">
             <div class="project-closing reveal">
-                <p>
+                <p data-i18n="telegram.closing">
                     PediteUNO fue diseñado como una solución escalable para modernizar servicios
                     de taxis y remises, automatizando la gestión de pasajeros, conductores y
                     operaciones comerciales de punta a punta.
                 </p>
                 <div class="project-cta">
-                    <a href="https://tobiroz.com/#projects" class="btn btn-outline">Ver más proyectos</a>
-                    <a href="https://tobiroz.com/#contact" class="btn btn-primary">Hablemos de tu proyecto</a>
+                    <a href="https://tobiroz.com/#projects" class="btn btn-outline" data-i18n="project.more">Ver más proyectos</a>
+                    <a href="https://tobiroz.com/#contact" class="btn btn-primary" data-i18n="project.talk">Hablemos de tu proyecto</a>
                 </div>
             </div>
         </section>
@@ -135,6 +140,7 @@
         </div>
     </footer>
 
+    <script src="js/i18n.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/animations.js"></script>
     <script>

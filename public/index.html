@@ -30,20 +30,26 @@
          ============================================================ -->
     <header class="site-header">
         <div class="nav-wrap">
-            <a href="https://tobiroz.com/" class="logo-link">
+            <a href="#hero" class="logo-link">
                 <span class="logo-mark"></span>
                 <span class="logo-text">Tobias Rozenfeld</span>
             </a>
 
             <nav class="nav-links">
-                <a href="#about">Sobre mí</a>
-                <a href="#stack">Stack</a>
-                <a href="#experience">Experiencia</a>
-                <a href="#projects">Proyectos</a>
-                <a href="#contact">Contacto</a>
+                <a href="#about" data-i18n="nav.about">Sobre mí</a>
+                <a href="#stack" data-i18n="nav.stack">Stack</a>
+                <a href="#experience" data-i18n="nav.experience">Experiencia</a>
+                <a href="#projects" data-i18n="nav.projects">Proyectos</a>
+                <a href="#contact" data-i18n="nav.contact">Contacto</a>
             </nav>
 
-            <a href="#contact" class="btn btn-primary nav-cta">Contactarme</a>
+            <button class="lang-switch" id="langSwitch" data-lang="es" aria-label="Cambiar idioma / Switch language">
+                <span class="lang-thumb"></span>
+                <span class="lang-option es">ES</span>
+                <span class="lang-option en">EN</span>
+            </button>
+
+            <a href="#contact" class="btn btn-primary nav-cta" data-i18n="nav.cta">Contactarme</a>
             <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
                 <i class="fa-solid fa-bars"></i>
             </button>
@@ -57,33 +63,33 @@
         <section id="hero">
             <div class="hero-glow"></div>
             <div class="hero-content">
-                <span class="hero-eyebrow"><span class="dot"></span> Disponible para nuevos proyectos</span>
+                <span class="hero-eyebrow"><span class="dot"></span> <span data-i18n="hero.eyebrow">Disponible para nuevos proyectos</span></span>
 
-                <h1 class="hero-title">
+                <h1 class="hero-title" data-i18n="hero.title">
                     Construyo productos<br>
                     impulsados por <span class="accent">Inteligencia Artificial</span>.
                 </h1>
 
-                <p class="hero-subtitle">
+                <p class="hero-subtitle" data-i18n="hero.subtitle">
                     Full Stack Developer enfocado en llevar ideas a producción:
                     visión artificial, modelos de lenguaje y arquitecturas backend escalables.
                 </p>
 
                 <div class="hero-tags">
-                    <span>Full Stack Developer</span>
-                    <span>Computer Vision</span>
-                    <span>LLMs</span>
-                    <span>Automation</span>
-                    <span>Backend Architecture</span>
+                    <span data-i18n="hero.tag1">Full Stack Developer</span>
+                    <span data-i18n="hero.tag2">Computer Vision</span>
+                    <span data-i18n="hero.tag3">LLMs</span>
+                    <span data-i18n="hero.tag4">Automation</span>
+                    <span data-i18n="hero.tag5">Backend Architecture</span>
                 </div>
 
                 <div class="hero-actions">
-                    <a href="#projects" class="btn btn-primary">Ver proyectos</a>
-                    <a href="#contact" class="btn btn-outline">Contactarme</a>
+                    <a href="#projects" class="btn btn-primary" data-i18n="hero.cta_projects">Ver proyectos</a>
+                    <a href="#contact" class="btn btn-outline" data-i18n="hero.cta_contact">Contactarme</a>
                 </div>
             </div>
 
-            <div class="hero-scroll-cue"><span class="line"></span>Scroll</div>
+            <div class="hero-scroll-cue"><span class="line"></span><span data-i18n="hero.scroll">Scroll</span></div>
         </section>
 
         <!-- ============================================================
@@ -92,9 +98,9 @@
         <section id="about" class="section section-dark">
             <div class="about-grid">
                 <div class="about-text reveal">
-                    <span class="eyebrow">Sobre mí</span>
-                    <h2 class="section-title">Ingeniería de software con foco en IA</h2>
-                    <p class="section-description">
+                    <span class="eyebrow" data-i18n="about.eyebrow">Sobre mí</span>
+                    <h2 class="section-title" data-i18n="about.title">Ingeniería de software con foco en IA</h2>
+                    <p class="section-description" data-i18n="about.desc">
                         Diseño soluciones que combinan aplicaciones web modernas, visión artificial
                         y modelos de lenguaje para resolver problemas reales, con la escalabilidad
                         y el criterio técnico de un producto pensado para producción.
@@ -105,29 +111,29 @@
                     <div class="about-fact">
                         <div class="about-fact-icon"><i class="fa-solid fa-graduation-cap"></i></div>
                         <div>
-                            <div class="about-fact-label">Formación</div>
-                            <div class="about-fact-value">Lic. en Informática — UNLP</div>
+                            <div class="about-fact-label" data-i18n="about.fact1_label">Formación</div>
+                            <div class="about-fact-value" data-i18n="about.fact1_value">Lic. en Informática — UNLP</div>
                         </div>
                     </div>
                     <div class="about-fact">
                         <div class="about-fact-icon"><i class="fa-solid fa-code"></i></div>
                         <div>
-                            <div class="about-fact-label">Trayectoria</div>
-                            <div class="about-fact-value">Desarrollando software desde 2019</div>
+                            <div class="about-fact-label" data-i18n="about.fact2_label">Trayectoria</div>
+                            <div class="about-fact-value" data-i18n="about.fact2_value">Desarrollando software desde 2019</div>
                         </div>
                     </div>
                     <div class="about-fact">
                         <div class="about-fact-icon"><i class="fa-solid fa-brain"></i></div>
                         <div>
-                            <div class="about-fact-label">Especialización</div>
-                            <div class="about-fact-value">Inteligencia Artificial aplicada</div>
+                            <div class="about-fact-label" data-i18n="about.fact3_label">Especialización</div>
+                            <div class="about-fact-value" data-i18n="about.fact3_value">Inteligencia Artificial aplicada</div>
                         </div>
                     </div>
                     <div class="about-fact">
                         <div class="about-fact-icon"><i class="fa-solid fa-layer-group"></i></div>
                         <div>
-                            <div class="about-fact-label">Enfoque</div>
-                            <div class="about-fact-value">Desarrollo Full Stack end-to-end</div>
+                            <div class="about-fact-label" data-i18n="about.fact4_label">Enfoque</div>
+                            <div class="about-fact-value" data-i18n="about.fact4_value">Desarrollo Full Stack end-to-end</div>
                         </div>
                     </div>
                 </div>
@@ -139,7 +145,7 @@
              ============================================================ -->
         <section id="objectives" class="section section-secondary">
             <div class="glass-card objectives-card reveal-scale">
-                <p class="objectives-lead">
+                <p class="objectives-lead" data-i18n="objectives.lead">
                     Mi objetivo es crear soluciones tecnológicas escalables que combinen
                     Inteligencia Artificial, automatización y desarrollo Full Stack,
                     participando en proyectos de alto impacto que generen valor real
@@ -147,20 +153,20 @@
                 </p>
 
                 <div class="objective-pillar">
-                    <h4><i class="fa-solid fa-robot" style="color: var(--primary-light); margin-right:6px;"></i> Inteligencia Artificial</h4>
-                    <p>Modelos aplicados a problemas concretos, no como experimento aislado.</p>
+                    <h4><i class="fa-solid fa-robot" style="color: var(--primary-light); margin-right:6px;"></i> <span data-i18n="objectives.p1_title">Inteligencia Artificial</span></h4>
+                    <p data-i18n="objectives.p1_desc">Modelos aplicados a problemas concretos, no como experimento aislado.</p>
                 </div>
                 <div class="objective-pillar">
-                    <h4><i class="fa-solid fa-gears" style="color: var(--primary-light); margin-right:6px;"></i> Automatización</h4>
-                    <p>Procesos que reducen carga operativa y liberan tiempo humano.</p>
+                    <h4><i class="fa-solid fa-gears" style="color: var(--primary-light); margin-right:6px;"></i> <span data-i18n="objectives.p2_title">Automatización</span></h4>
+                    <p data-i18n="objectives.p2_desc">Procesos que reducen carga operativa y liberan tiempo humano.</p>
                 </div>
                 <div class="objective-pillar">
-                    <h4><i class="fa-solid fa-cubes" style="color: var(--primary-light); margin-right:6px;"></i> Software escalable</h4>
-                    <p>Arquitecturas pensadas para crecer sin rehacerse desde cero.</p>
+                    <h4><i class="fa-solid fa-cubes" style="color: var(--primary-light); margin-right:6px;"></i> <span data-i18n="objectives.p3_title">Software escalable</span></h4>
+                    <p data-i18n="objectives.p3_desc">Arquitecturas pensadas para crecer sin rehacerse desde cero.</p>
                 </div>
                 <div class="objective-pillar">
-                    <h4><i class="fa-solid fa-rocket" style="color: var(--primary-light); margin-right:6px;"></i> Productos tecnológicos</h4>
-                    <p>De la idea a producción, con foco en el usuario final.</p>
+                    <h4><i class="fa-solid fa-rocket" style="color: var(--primary-light); margin-right:6px;"></i> <span data-i18n="objectives.p4_title">Productos tecnológicos</span></h4>
+                    <p data-i18n="objectives.p4_desc">De la idea a producción, con foco en el usuario final.</p>
                 </div>
             </div>
         </section>
@@ -170,9 +176,9 @@
              ============================================================ -->
         <section id="stack" class="section stack-section section-dark">
             <div class="section-header reveal">
-                <span class="eyebrow">Stack</span>
-                <h2 class="section-title">Herramientas con las que construyo</h2>
-                <p class="section-description">Pasá el mouse sobre cada tecnología para ver dónde la aplico.</p>
+                <span class="eyebrow" data-i18n="stack.eyebrow">Stack</span>
+                <h2 class="section-title" data-i18n="stack.title">Herramientas con las que construyo</h2>
+                <p class="section-description" data-i18n="stack.desc">Pasá el mouse sobre cada tecnología para ver dónde la aplico.</p>
             </div>
 
             <div class="stack-track-wrap">
@@ -236,19 +242,19 @@
              ============================================================ -->
         <section id="experience" class="section section-secondary">
             <div class="section-header reveal">
-                <span class="eyebrow">Experiencia</span>
-                <h2 class="section-title">Trayectoria profesional</h2>
-                <p class="section-description">Un recorrido cronológico por los roles y proyectos que fui construyendo.</p>
+                <span class="eyebrow" data-i18n="experience.eyebrow">Experiencia</span>
+                <h2 class="section-title" data-i18n="experience.title">Trayectoria profesional</h2>
+                <p class="section-description" data-i18n="experience.desc">Un recorrido cronológico por los roles y proyectos que fui construyendo.</p>
             </div>
 
             <div class="timeline">
                 <div class="timeline-item reveal">
                     <div class="timeline-node"></div>
-                    <div class="timeline-date">2022 — Presente</div>
+                    <div class="timeline-date" data-i18n="exp1.date">2022 — Presente</div>
                     <div class="glass-card timeline-card">
-                        <h3 class="timeline-role">Desarrollador Full Stack Freelance</h3>
-                        <div class="timeline-org">Proyectos independientes</div>
-                        <p class="timeline-desc">
+                        <h3 class="timeline-role" data-i18n="exp1.role">Desarrollador Full Stack Freelance</h3>
+                        <div class="timeline-org" data-i18n="exp1.org">Proyectos independientes</div>
+                        <p class="timeline-desc" data-i18n="exp1.desc">
                             Aplicaciones web end-to-end con dashboards administrativos, sistemas
                             de monitoreo y soluciones escalables integrando APIs REST e IA.
                         </p>
@@ -260,11 +266,11 @@
 
                 <div class="timeline-item reveal">
                     <div class="timeline-node"></div>
-                    <div class="timeline-date">2022 — Presente</div>
+                    <div class="timeline-date" data-i18n="exp2.date">2022 — Presente</div>
                     <div class="glass-card timeline-card">
-                        <h3 class="timeline-role">Especialista en IA y Automatización</h3>
-                        <div class="timeline-org">Proyectos independientes</div>
-                        <p class="timeline-desc">
+                        <h3 class="timeline-role" data-i18n="exp2.role">Especialista en IA y Automatización</h3>
+                        <div class="timeline-org" data-i18n="exp2.org">Proyectos independientes</div>
+                        <p class="timeline-desc" data-i18n="exp2.desc">
                             Soluciones de visión artificial, LLMs, procesamiento de audio y
                             arquitecturas RAG para automatizar procesos empresariales.
                         </p>
@@ -276,11 +282,11 @@
 
                 <div class="timeline-item reveal">
                     <div class="timeline-node"></div>
-                    <div class="timeline-date">2023</div>
+                    <div class="timeline-date" data-i18n="exp3.date">2023</div>
                     <div class="glass-card timeline-card">
-                        <h3 class="timeline-role">Fundador — Nexium Community</h3>
-                        <div class="timeline-org">Comunidad de streamers e influencers</div>
-                        <p class="timeline-desc">
+                        <h3 class="timeline-role" data-i18n="exp3.role">Fundador — Nexium Community</h3>
+                        <div class="timeline-org" data-i18n="exp3.org">Comunidad de streamers e influencers</div>
+                        <p class="timeline-desc" data-i18n="exp3.desc">
                             Gestión técnica de una comunidad digital, con automatización de
                             procesos y desarrollo de bots propios para Discord.
                         </p>
@@ -292,11 +298,11 @@
 
                 <div class="timeline-item reveal">
                     <div class="timeline-node"></div>
-                    <div class="timeline-date">2023</div>
+                    <div class="timeline-date" data-i18n="exp4.date">2023</div>
                     <div class="glass-card timeline-card">
-                        <h3 class="timeline-role">Desarrollador Web — Drigo</h3>
-                        <div class="timeline-org">Plataforma web</div>
-                        <p class="timeline-desc">
+                        <h3 class="timeline-role" data-i18n="exp4.role">Desarrollador Web — Drigo</h3>
+                        <div class="timeline-org" data-i18n="exp4.org">Plataforma web</div>
+                        <p class="timeline-desc" data-i18n="exp4.desc">
                             Plataforma con actualización de contenido en tiempo real,
                             optimización de rendimiento frontend y estabilidad bajo alta concurrencia.
                         </p>
@@ -308,11 +314,11 @@
 
                 <div class="timeline-item reveal">
                     <div class="timeline-node"></div>
-                    <div class="timeline-date">2023 — Presente</div>
+                    <div class="timeline-date" data-i18n="exp5.date">2023 — Presente</div>
                     <div class="glass-card timeline-card">
-                        <h3 class="timeline-role">Co-fundador & Developer — Altomar</h3>
-                        <div class="timeline-org">Visión artificial aplicada</div>
-                        <p class="timeline-desc">
+                        <h3 class="timeline-role" data-i18n="exp5.role">Co-fundador & Developer — Altomar</h3>
+                        <div class="timeline-org" data-i18n="exp5.org">Visión artificial aplicada</div>
+                        <p class="timeline-desc" data-i18n="exp5.desc">
                             Modelos propios de detección y fine-tuning para mejorar la
                             precisión de detección en tiempo real.
                         </p>
@@ -329,9 +335,9 @@
              ============================================================ -->
         <section id="projects" class="section section-dark">
             <div class="section-header reveal">
-                <span class="eyebrow">Proyectos</span>
-                <h2 class="section-title">Productos que construí</h2>
-                <p class="section-description">De la idea al deploy: proyectos propios y para clientes.</p>
+                <span class="eyebrow" data-i18n="projects.eyebrow">Proyectos</span>
+                <h2 class="section-title" data-i18n="projects.title">Productos que construí</h2>
+                <p class="section-description" data-i18n="projects.desc">De la idea al deploy: proyectos propios y para clientes.</p>
             </div>
 
             <div class="projects-grid">
@@ -342,9 +348,9 @@
                         <i class="fa-solid fa-note-sticky project-media-icon"></i>
                     </div>
                     <div class="project-body">
-                        <h3 class="project-name">ApuntarIA</h3>
-                        <div class="project-problem">Convierte clases y material extenso en apuntes claros y accionables.</div>
-                        <p class="project-desc">
+                        <h3 class="project-name" data-i18n="proj.apuntaria.name">ApuntarIA</h3>
+                        <div class="project-problem" data-i18n="proj.apuntaria.problem">Convierte clases y material extenso en apuntes claros y accionables.</div>
+                        <p class="project-desc" data-i18n="proj.apuntaria.desc">
                             Plataforma web para generar apuntes de estudio asistidos por IA,
                             pensada para estudiantes que necesitan resumir grandes volúmenes
                             de contenido sin perder los conceptos clave.
@@ -353,7 +359,7 @@
                             <span>Next.js</span><span>OpenAI API</span><span>PostgreSQL</span>
                         </div>
                         <div class="project-actions">
-                            <a href="apuntaria.html" class="btn btn-outline">Ver detalle</a>
+                            <a href="apuntaria.html" class="btn btn-outline" data-i18n="proj.apuntaria.cta">Ver demo</a>
                         </div>
                     </div>
                 </div>
@@ -361,15 +367,15 @@
                 <div class="glass-card project-card reveal">
                     <div class="project-media"><i class="fa-solid fa-taxi project-media-icon"></i></div>
                     <div class="project-body">
-                        <h3 class="project-name">Plataforma para Taxis y Remises</h3>
-                        <div class="project-problem">Gestiona pedidos de viajes sin necesidad de una app dedicada.</div>
-                        <p class="project-desc">
+                        <h3 class="project-name" data-i18n="proj.telegram.name">Plataforma para Taxis y Remises</h3>
+                        <div class="project-problem" data-i18n="proj.telegram.problem">Gestiona pedidos de viajes sin necesidad de una app dedicada.</div>
+                        <p class="project-desc" data-i18n="proj.telegram.desc">
                             Bot inteligente en Telegram para coordinar solicitudes de viaje,
                             asignación de choferes y seguimiento de pedidos en tiempo real.
                         </p>
                         <div class="project-tags"><span>Python</span><span>Telegram API</span></div>
                         <div class="project-actions">
-                            <a href="bot-telegram.html" class="btn btn-outline">Ver detalle</a>
+                            <a href="bot-telegram.html" class="btn btn-outline" data-i18n="proj.telegram.cta">Ver detalle</a>
                         </div>
                     </div>
                 </div>
@@ -377,15 +383,15 @@
                 <div class="glass-card project-card reveal">
                     <div class="project-media"><i class="fa-solid fa-crosshairs project-media-icon"></i></div>
                     <div class="project-body">
-                        <h3 class="project-name">Sistema de Detección de Objetos</h3>
-                        <div class="project-problem">Identifica y clasifica objetos en video en tiempo real.</div>
-                        <p class="project-desc">
+                        <h3 class="project-name" data-i18n="proj.detection.name">Sistema de Detección de Objetos</h3>
+                        <div class="project-problem" data-i18n="proj.detection.problem">Identifica y clasifica objetos en video en tiempo real.</div>
+                        <p class="project-desc" data-i18n="proj.detection.desc">
                             Sistema de visión artificial con modelos YOLO reentrenados para
                             casos de uso específicos, sobre transmisiones en vivo.
                         </p>
                         <div class="project-tags"><span>YOLO</span><span>OpenCV</span><span>PyTorch</span></div>
                         <div class="project-actions">
-                            <a href="detection-objects.html" class="btn btn-outline">Ver detalle</a>
+                            <a href="detection-objects.html" class="btn btn-outline" data-i18n="proj.detection.cta">Ver detalle</a>
                         </div>
                     </div>
                 </div>
@@ -393,15 +399,15 @@
                 <div class="glass-card project-card reveal">
                     <div class="project-media"><i class="fa-solid fa-comments project-media-icon"></i></div>
                     <div class="project-body">
-                        <h3 class="project-name">Bots para Discord</h3>
-                        <div class="project-problem">Reduce la carga de moderación manual en comunidades grandes.</div>
-                        <p class="project-desc">
+                        <h3 class="project-name" data-i18n="proj.discord.name">Bots para Discord</h3>
+                        <div class="project-problem" data-i18n="proj.discord.problem">Reduce la carga de moderación manual en comunidades grandes.</div>
+                        <p class="project-desc" data-i18n="proj.discord.desc">
                             Bots personalizados con sistema de tickets, reproducción de
                             música, moderación automática y flujos de eventos.
                         </p>
                         <div class="project-tags"><span>Node.js</span><span>Discord.js</span></div>
                         <div class="project-actions">
-                            <a href="bot-discord.html" class="btn btn-outline">Ver detalle</a>
+                            <a href="bot-discord.html" class="btn btn-outline" data-i18n="proj.discord.cta">Ver detalle</a>
                         </div>
                     </div>
                 </div>
@@ -409,15 +415,15 @@
                 <div class="glass-card project-card reveal">
                     <div class="project-media"><i class="fa-solid fa-water project-media-icon"></i></div>
                     <div class="project-body">
-                        <h3 class="project-name">Altomar</h3>
-                        <div class="project-problem">Sitio web para presentar el producto y su tecnología de detección.</div>
-                        <p class="project-desc">
+                        <h3 class="project-name" data-i18n="proj.altomar.name">Altomar</h3>
+                        <div class="project-problem" data-i18n="proj.altomar.problem">Sitio web para presentar el producto y su tecnología de detección.</div>
+                        <p class="project-desc" data-i18n="proj.altomar.desc">
                             Landing y plataforma para Altomar, con foco en comunicar
                             claramente la propuesta de valor del producto.
                         </p>
                         <div class="project-tags"><span>React</span><span>Firebase</span></div>
                         <div class="project-actions">
-                            <a href="https://altomar.org" target="_blank" class="btn btn-outline">Visitar sitio</a>
+                            <a href="https://altomar.org" target="_blank" class="btn btn-outline" data-i18n="proj.altomar.cta">Visitar sitio</a>
                         </div>
                     </div>
                 </div>
@@ -425,15 +431,15 @@
                 <div class="glass-card project-card reveal">
                     <div class="project-media"><i class="fa-solid fa-users project-media-icon"></i></div>
                     <div class="project-body">
-                        <h3 class="project-name">Nexium Community</h3>
-                        <div class="project-problem">Punto de encuentro para una comunidad de streamers e influencers.</div>
-                        <p class="project-desc">
+                        <h3 class="project-name" data-i18n="proj.nexium.name">Nexium Community</h3>
+                        <div class="project-problem" data-i18n="proj.nexium.problem">Punto de encuentro para una comunidad de streamers e influencers.</div>
+                        <p class="project-desc" data-i18n="proj.nexium.desc">
                             Sitio web y bots de soporte para la comunidad, integrando
                             automatización de procesos y gestión de eventos.
                         </p>
                         <div class="project-tags"><span>React</span><span>Firebase</span></div>
                         <div class="project-actions">
-                            <a href="https://nexiumcomunity.web.app/" target="_blank" class="btn btn-outline">Visitar sitio</a>
+                            <a href="https://nexiumcomunity.web.app/" target="_blank" class="btn btn-outline" data-i18n="proj.nexium.cta">Visitar sitio</a>
                         </div>
                     </div>
                 </div>
@@ -447,23 +453,23 @@
         <section id="contact" class="section section-secondary">
             <div class="contact-wrap">
                 <div class="reveal">
-                    <span class="eyebrow">Contacto</span>
-                    <h2 class="section-title">Hablemos de tu proyecto</h2>
-                    <p class="section-description">
+                    <span class="eyebrow" data-i18n="contact.eyebrow">Contacto</span>
+                    <h2 class="section-title" data-i18n="contact.title">Hablemos de tu proyecto</h2>
+                    <p class="section-description" data-i18n="contact.desc">
                         Contame qué estás construyendo y en qué parte del proceso puedo sumar.
                     </p>
 
                     <div class="contact-info-item">
                         <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
                         <div>
-                            <div class="contact-info-label">Respondo en</div>
-                            <div class="contact-info-value">Menos de 48 horas</div>
+                            <div class="contact-info-label" data-i18n="contact.reply_label">Respondo en</div>
+                            <div class="contact-info-value" data-i18n="contact.reply_value">Menos de 48 horas</div>
                         </div>
                     </div>
                     <div class="contact-info-item">
                         <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
                         <div>
-                            <div class="contact-info-label">Ubicación</div>
+                            <div class="contact-info-label" data-i18n="contact.location_label">Ubicación</div>
                             <div class="contact-info-value">La Plata, Argentina</div>
                         </div>
                     </div>
@@ -471,18 +477,18 @@
 
                 <form id="contactForm" class="glass-card contact-form reveal">
                     <div class="form-group">
-                        <label for="name" class="form-label">Nombre</label>
-                        <input type="text" id="name" class="form-control" placeholder="Tu nombre" required>
+                        <label for="name" class="form-label" data-i18n="contact.form_name">Nombre</label>
+                        <input type="text" id="name" class="form-control" placeholder="Tu nombre" data-i18n-placeholder="contact.form_name_ph" required>
                     </div>
                     <div class="form-group">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" id="email" class="form-control" placeholder="Tu correo electrónico" required>
+                        <label for="email" class="form-label" data-i18n="contact.form_email">Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="Tu correo electrónico" data-i18n-placeholder="contact.form_email_ph" required>
                     </div>
                     <div class="form-group">
-                        <label for="message" class="form-label">Mensaje</label>
-                        <textarea id="message" class="form-control" placeholder="Contame sobre tu proyecto" rows="4" required></textarea>
+                        <label for="message" class="form-label" data-i18n="contact.form_message">Mensaje</label>
+                        <textarea id="message" class="form-control" placeholder="Contame sobre tu proyecto" data-i18n-placeholder="contact.form_message_ph" rows="4" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                    <button type="submit" class="btn btn-primary" data-i18n="contact.form_submit">Enviar mensaje</button>
                     <div id="formStatus" class="form-status"></div>
                 </form>
             </div>
@@ -499,9 +505,9 @@
                 &copy; <span id="footer-year">2026</span> Tobias Rozenfeld
             </div>
             <!-- <div class="footer-links">
-                <a href="https://tobiroz.com/">Inicio</a>
-                <a href="https://tobiroz.com/#projects">Proyectos</a>
-                <a href="https://tobiroz.com/#contact">Contacto</a>
+                <a href="#hero" data-i18n="footer.home">Inicio</a>
+                <a href="#projects" data-i18n="footer.projects">Proyectos</a>
+                <a href="#contact" data-i18n="footer.contact">Contacto</a>
             </div> -->
         </div>
     </footer>
@@ -510,6 +516,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <!-- Scripts del proyecto -->
+    <script src="js/i18n.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/stack.js"></script>
     <script src="js/animations.js"></script>

@@ -24,13 +24,18 @@
                 <span class="logo-text">Tobias Rozenfeld</span>
             </a>
             <nav class="nav-links">
-                <a href="https://tobiroz.com/#about">Sobre mí</a>
-                <a href="https://tobiroz.com/#stack">Stack</a>
-                <a href="https://tobiroz.com/#experience">Experiencia</a>
-                <a href="https://tobiroz.com/#projects">Proyectos</a>
-                <a href="https://tobiroz.com/#contact">Contacto</a>
+                <a href="https://tobiroz.com/#about" data-i18n="nav.about">Sobre mí</a>
+                <a href="https://tobiroz.com/#stack" data-i18n="nav.stack">Stack</a>
+                <a href="https://tobiroz.com/#experience" data-i18n="nav.experience">Experiencia</a>
+                <a href="https://tobiroz.com/#projects" data-i18n="nav.projects">Proyectos</a>
+                <a href="https://tobiroz.com/#contact" data-i18n="nav.contact">Contacto</a>
             </nav>
-            <a href="https://tobiroz.com/#contact" class="btn btn-primary nav-cta">Contactarme</a>
+            <button class="lang-switch" id="langSwitch" data-lang="es" aria-label="Cambiar idioma / Switch language">
+                <span class="lang-thumb"></span>
+                <span class="lang-option es">ES</span>
+                <span class="lang-option en">EN</span>
+            </button>
+            <a href="https://tobiroz.com/#contact" class="btn btn-primary nav-cta" data-i18n="nav.cta">Contactarme</a>
             <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
                 <i class="fa-solid fa-bars"></i>
             </button>
@@ -40,10 +45,12 @@
     <main>
         <!-- HERO DE PROYECTO -->
         <section class="project-hero">
+            <div class="project-hero-glow"></div>
             <div class="project-hero-inner">
                 <!-- <a href="#projects" class="project-back"><i class="fa-solid fa-arrow-left"></i> Volver a proyectos</a> -->
-                <h1 class="project-hero-title">Bots para Discord</h1>
-                <p class="project-hero-desc">
+                <span class="project-eyebrow"><span class="dot"></span> <span data-i18n="discord.eyebrow">Bots & Automatización</span></span>
+                <h1 class="project-hero-title" data-i18n="discord.hero_title">Bots para Discord</h1>
+                <p class="project-hero-desc" data-i18n="discord.hero_desc">
                     Desarrollo de bots personalizados con Node.js y Python, adaptados a las
                     necesidades de comunidades, streamers, empresas y organizaciones.
                 </p>
@@ -53,40 +60,40 @@
         <!-- FEATURES -->
         <section class="section section-dark">
             <div class="section-header reveal">
-                <span class="eyebrow">Capacidades</span>
-                <h2 class="section-title">Qué resuelve cada bot</h2>
+                <span class="eyebrow" data-i18n="discord.features_eyebrow">Capacidades</span>
+                <h2 class="section-title" data-i18n="discord.features_title">Qué resuelve cada bot</h2>
             </div>
 
             <div class="feature-grid">
                 <div class="glass-card feature-card reveal">
                     <div class="feature-icon"><i class="fa-solid fa-terminal"></i></div>
-                    <h3 class="feature-title">Comandos slash</h3>
-                    <p class="feature-desc">Comandos "/" para consultas rápidas, automatización de procesos, gestión de usuarios e integración con APIs externas.</p>
+                    <h3 class="feature-title" data-i18n="discord.f1_title">Comandos slash</h3>
+                    <p class="feature-desc" data-i18n="discord.f1_desc">Comandos "/" para consultas rápidas, automatización de procesos, gestión de usuarios e integración con APIs externas.</p>
                 </div>
                 <div class="glass-card feature-card reveal">
                     <div class="feature-icon"><i class="fa-solid fa-user-plus"></i></div>
-                    <h3 class="feature-title">Sistema de bienvenida</h3>
-                    <p class="feature-desc">Mensajes automáticos para nuevos miembros, asignación de roles y configuración personalizada por servidor.</p>
+                    <h3 class="feature-title" data-i18n="discord.f2_title">Sistema de bienvenida</h3>
+                    <p class="feature-desc" data-i18n="discord.f2_desc">Mensajes automáticos para nuevos miembros, asignación de roles y configuración personalizada por servidor.</p>
                 </div>
                 <div class="glass-card feature-card reveal">
                     <div class="feature-icon"><i class="fa-solid fa-ticket"></i></div>
-                    <h3 class="feature-title">Sistema de tickets</h3>
-                    <p class="feature-desc">Creación automática de canales privados de soporte, atención de administradores y cierre automatizado.</p>
+                    <h3 class="feature-title" data-i18n="discord.f3_title">Sistema de tickets</h3>
+                    <p class="feature-desc" data-i18n="discord.f3_desc">Creación automática de canales privados de soporte, atención de administradores y cierre automatizado.</p>
                 </div>
                 <div class="glass-card feature-card reveal">
                     <div class="feature-icon"><i class="fa-solid fa-star"></i></div>
-                    <h3 class="feature-title">Calificación de soporte</h3>
-                    <p class="feature-desc">Al finalizar una atención, los usuarios valoran el servicio y se generan estadísticas para moderación.</p>
+                    <h3 class="feature-title" data-i18n="discord.f4_title">Calificación de soporte</h3>
+                    <p class="feature-desc" data-i18n="discord.f4_desc">Al finalizar una atención, los usuarios valoran el servicio y se generan estadísticas para moderación.</p>
                 </div>
                 <div class="glass-card feature-card reveal">
                     <div class="feature-icon"><i class="fa-solid fa-shuffle"></i></div>
-                    <h3 class="feature-title">Menús interactivos</h3>
-                    <p class="feature-desc">Botones, select menus y formularios que dirigen automáticamente a los usuarios al canal o servicio correcto.</p>
+                    <h3 class="feature-title" data-i18n="discord.f5_title">Menús interactivos</h3>
+                    <p class="feature-desc" data-i18n="discord.f5_desc">Botones, select menus y formularios que dirigen automáticamente a los usuarios al canal o servicio correcto.</p>
                 </div>
                 <div class="glass-card feature-card reveal">
                     <div class="feature-icon"><i class="fa-solid fa-music"></i></div>
-                    <h3 class="feature-title">Bot de música</h3>
-                    <p class="feature-desc">Reproducción por comandos, gestión de colas de reproducción y control desde canales de voz.</p>
+                    <h3 class="feature-title" data-i18n="discord.f6_title">Bot de música</h3>
+                    <p class="feature-desc" data-i18n="discord.f6_desc">Reproducción por comandos, gestión de colas de reproducción y control desde canales de voz.</p>
                 </div>
             </div>
         </section>
@@ -94,7 +101,7 @@
         <!-- TECNOLOGÍAS -->
         <section class="section section-secondary">
             <div class="glass-card tech-block reveal">
-                <div class="tech-block-title">Tecnologías utilizadas</div>
+                <div class="tech-block-title" data-i18n="discord.tech_title">Tecnologías utilizadas</div>
                 <div class="tech-block-list">
                     <span>Node.js</span><span>Discord.js</span><span>Python</span>
                     <span>APIs REST</span><span>Automatización</span><span>Moderación</span>
@@ -105,13 +112,13 @@
         <!-- CIERRE -->
         <section class="section section-dark">
             <div class="project-closing reveal">
-                <p>
+                <p data-i18n="discord.closing">
                     Además de estas funciones, desarrollo sistemas de moderación, automatización,
                     gestión de roles, estadísticas y soluciones a medida para comunidades de Discord.
                 </p>
                 <div class="project-cta">
-                    <a href="https://tobiroz.com/#projects" class="btn btn-outline">Ver más proyectos</a>
-                    <a href="https://tobiroz.com/#contact" class="btn btn-primary">Hablemos de tu proyecto</a>
+                    <a href="https://tobiroz.com/#projects" class="btn btn-outline" data-i18n="project.more">Ver más proyectos</a>
+                    <a href="https://tobiroz.com/#contact" class="btn btn-primary" data-i18n="project.talk">Hablemos de tu proyecto</a>
                 </div>
             </div>
         </section>
@@ -131,6 +138,7 @@
         </div>
     </footer>
 
+    <script src="js/i18n.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/animations.js"></script>
     <script>

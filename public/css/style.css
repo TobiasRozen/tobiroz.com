@@ -319,3 +319,93 @@ p {
     color: var(--text-primary);
     font-size: 1.4rem;
 }
+
+/* ============================================================
+   LANGUAGE SWITCH
+   ============================================================ */
+
+.lang-switch {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 74px;
+    height: 38px;
+
+    padding: 4px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+
+    background: rgba(255,255,255,.04);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    cursor: pointer;
+    transition: all .3s ease;
+    overflow: hidden;
+}
+
+.lang-switch:hover {
+    border-color: var(--border-hover);
+    box-shadow: 0 0 18px var(--primary-glow);
+}
+
+.lang-option {
+    flex: 1;
+    text-align: center;
+    font-size: .75rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    z-index: 2;
+    user-select: none;
+    transition: color .3s ease;
+}
+
+.lang-thumb {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    background: var(--primary);
+
+    box-shadow: 0 4px 12px var(--primary-glow);
+    transition: transform .3s ease;
+}
+
+/* Estado EN */
+.lang-switch[data-lang="en"] .lang-thumb {
+    transform: translateX(36px);
+}
+
+/* Texto activo */
+.lang-switch[data-lang="es"] .es,
+.lang-switch[data-lang="en"] .en {
+    color: var(--text-primary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .lang-switch {
+        width: 66px;
+        height: 34px;
+    }
+
+    .lang-thumb {
+        width: 26px;
+        height: 26px;
+    }
+
+    .lang-switch[data-lang="en"] .lang-thumb {
+        transform: translateX(32px);
+    }
+
+    .lang-option {
+        font-size: .7rem;
+    }
+}

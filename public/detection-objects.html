@@ -24,13 +24,18 @@
                 <span class="logo-text">Tobias Rozenfeld</span>
             </a>
             <nav class="nav-links">
-                <a href="https://tobiroz.com/#about">Sobre mí</a>
-                <a href="https://tobiroz.com/#stack">Stack</a>
-                <a href="https://tobiroz.com/#experience">Experiencia</a>
-                <a href="https://tobiroz.com/#projects">Proyectos</a>
-                <a href="https://tobiroz.com/#contact">Contacto</a>
+                <a href="https://tobiroz.com/#about" data-i18n="nav.about">Sobre mí</a>
+                <a href="https://tobiroz.com/#stack" data-i18n="nav.stack">Stack</a>
+                <a href="https://tobiroz.com/#experience" data-i18n="nav.experience">Experiencia</a>
+                <a href="https://tobiroz.com/#projects" data-i18n="nav.projects">Proyectos</a>
+                <a href="https://tobiroz.com/#contact" data-i18n="nav.contact">Contacto</a>
             </nav>
-            <a href="https://tobiroz.com/#contact" class="btn btn-primary nav-cta">Contactarme</a>
+            <button class="lang-switch" id="langSwitch" data-lang="es" aria-label="Cambiar idioma / Switch language">
+                <span class="lang-thumb"></span>
+                <span class="lang-option es">ES</span>
+                <span class="lang-option en">EN</span>
+            </button>
+            <a href="https://tobiroz.com/#contact" class="btn btn-primary nav-cta" data-i18n="nav.cta">Contactarme</a>
             <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
                 <i class="fa-solid fa-bars"></i>
             </button>
@@ -43,9 +48,9 @@
             <div class="project-hero-glow"></div>
             <div class="project-hero-inner">
                 <!-- <a href="https://tobiroz.com/#projects" class="project-back"><i class="fa-solid fa-arrow-left"></i> Volver a proyectos</a> -->
-                <span class="project-eyebrow"><span class="dot"></span> Computer Vision</span>
-                <h1 class="project-hero-title">Detección de Objetos con IA</h1>
-                <p class="project-hero-desc">
+                <span class="project-eyebrow"><span class="dot"></span> <span data-i18n="detection.eyebrow">Computer Vision</span></span>
+                <h1 class="project-hero-title" data-i18n="detection.hero_title">Detección de Objetos con IA</h1>
+                <p class="project-hero-desc" data-i18n="detection.hero_desc">
                     Desarrollo completo de datasets, entrenamiento de modelos de visión
                     artificial y detección de objetos en tiempo real utilizando Python,
                     Roboflow y modelos de Machine Learning.
@@ -56,40 +61,40 @@
         <!-- FEATURES -->
         <section class="section section-dark">
             <div class="section-header reveal">
-                <span class="eyebrow">Capacidades</span>
-                <h2 class="section-title">Qué resuelve el sistema</h2>
+                <span class="eyebrow" data-i18n="detection.features_eyebrow">Capacidades</span>
+                <h2 class="section-title" data-i18n="detection.features_title">Qué resuelve el sistema</h2>
             </div>
 
             <div class="feature-grid">
                 <div class="glass-card feature-card reveal">
                     <div class="feature-icon"><i class="fa-solid fa-video"></i></div>
-                    <h3 class="feature-title">Generación de dataset</h3>
-                    <p class="feature-desc">Extracción automática de frames desde videos para construir conjuntos de datos personalizados para entrenamiento.</p>
+                    <h3 class="feature-title" data-i18n="detection.f1_title">Generación de dataset</h3>
+                    <p class="feature-desc" data-i18n="detection.f1_desc">Extracción automática de frames desde videos para construir conjuntos de datos personalizados para entrenamiento.</p>
                 </div>
                 <div class="glass-card feature-card reveal">
                     <div class="feature-icon"><i class="fa-solid fa-tag"></i></div>
-                    <h3 class="feature-title">Etiquetado y segmentación</h3>
-                    <p class="feature-desc">Clasificación y segmentación de objetos mediante Roboflow, asignando categorías para su reconocimiento automático.</p>
+                    <h3 class="feature-title" data-i18n="detection.f2_title">Etiquetado y segmentación</h3>
+                    <p class="feature-desc" data-i18n="detection.f2_desc">Clasificación y segmentación de objetos mediante Roboflow, asignando categorías para su reconocimiento automático.</p>
                 </div>
                 <div class="glass-card feature-card reveal">
                     <div class="feature-icon"><i class="fa-solid fa-brain"></i></div>
-                    <h3 class="feature-title">Entrenamiento de modelos</h3>
-                    <p class="feature-desc">Entrenamiento de modelos personalizados con Python y datasets propios para detección optimizada.</p>
+                    <h3 class="feature-title" data-i18n="detection.f3_title">Entrenamiento de modelos</h3>
+                    <p class="feature-desc" data-i18n="detection.f3_desc">Entrenamiento de modelos personalizados con Python y datasets propios para detección optimizada.</p>
                 </div>
                 <div class="glass-card feature-card reveal">
                     <div class="feature-icon"><i class="fa-solid fa-box"></i></div>
-                    <h3 class="feature-title">Generación de modelos .pt</h3>
-                    <p class="feature-desc">Modelos entrenados capaces de reconocer y diferenciar objetos según las categorías definidas.</p>
+                    <h3 class="feature-title" data-i18n="detection.f4_title">Generación de modelos .pt</h3>
+                    <p class="feature-desc" data-i18n="detection.f4_desc">Modelos entrenados capaces de reconocer y diferenciar objetos según las categorías definidas.</p>
                 </div>
                 <div class="glass-card feature-card reveal">
                     <div class="feature-icon"><i class="fa-solid fa-camera"></i></div>
-                    <h3 class="feature-title">Detección en tiempo real</h3>
-                    <p class="feature-desc">Análisis de video en vivo o grabado, identificando objetos automáticamente y mostrando resultados al instante.</p>
+                    <h3 class="feature-title" data-i18n="detection.f5_title">Detección en tiempo real</h3>
+                    <p class="feature-desc" data-i18n="detection.f5_desc">Análisis de video en vivo o grabado, identificando objetos automáticamente y mostrando resultados al instante.</p>
                 </div>
                 <div class="glass-card feature-card reveal">
                     <div class="feature-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
-                    <h3 class="feature-title">Sistemas de alertas</h3>
-                    <p class="feature-desc">Avisos automáticos cuando se detectan eventos, acciones u objetos específicos definidos por el cliente.</p>
+                    <h3 class="feature-title" data-i18n="detection.f6_title">Sistemas de alertas</h3>
+                    <p class="feature-desc" data-i18n="detection.f6_desc">Avisos automáticos cuando se detectan eventos, acciones u objetos específicos definidos por el cliente.</p>
                 </div>
             </div>
         </section>
@@ -97,7 +102,7 @@
         <!-- TECNOLOGÍAS -->
         <section class="section section-secondary">
             <div class="glass-card tech-block reveal">
-                <div class="tech-block-title">Tecnologías utilizadas</div>
+                <div class="tech-block-title" data-i18n="detection.tech_title">Tecnologías utilizadas</div>
                 <div class="tech-block-list">
                     <span>Python</span><span>Roboflow</span><span>Computer Vision</span>
                     <span>Machine Learning</span><span>OpenCV</span><span>YOLO</span>
@@ -108,14 +113,14 @@
         <!-- CIERRE -->
         <section class="section section-dark">
             <div class="project-closing reveal">
-                <p>
+                <p data-i18n="detection.closing">
                     Esta solución permite automatizar procesos de monitoreo, inspección y
                     control mediante cámaras, transformando imágenes y videos en información
                     útil para la toma de decisiones.
                 </p>
                 <div class="project-cta">
-                    <a href="https://tobiroz.com/#projects" class="btn btn-outline">Ver más proyectos</a>
-                    <a href="https://tobiroz.com/#contact" class="btn btn-primary">Hablemos de tu proyecto</a>
+                    <a href="https://tobiroz.com/#projects" class="btn btn-outline" data-i18n="project.more">Ver más proyectos</a>
+                    <a href="https://tobiroz.com/#contact" class="btn btn-primary" data-i18n="project.talk">Hablemos de tu proyecto</a>
                 </div>
             </div>
         </section>
@@ -135,6 +140,7 @@
         </div>
     </footer>
 
+    <script src="js/i18n.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/animations.js"></script>
     <script>
