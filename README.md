@@ -13,4 +13,5 @@
    V3.0
    - Nuevo Estilo.
    - Time line de experiencias desde la actualidad a lo más old
+   - Logo de Linkedin que apunta a mi perfil en el footer
    ============================================================ */
