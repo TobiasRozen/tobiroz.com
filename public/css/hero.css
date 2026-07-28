@@ -1,172 +1,146 @@
 /* ============================================================
-   HERO.CSS — Seccion principal (thesis de la pagina)
-   Grid tecnologico animado + glow azul + entrada en fade
+   HERO.CSS — Seccion principal (Layout editorial asimétrico)
    ============================================================ */
 
 #hero {
     position: relative;
     min-height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end; /* Alineamos el contenido hacia abajo */
     padding: 140px 24px 80px;
     background-color: var(--bg-primary);
     overflow: hidden;
+    border-bottom: 1px solid var(--border); /* Línea limpia inferior */
 }
 
-/* Grid tecnologico de fondo: lineas finas que sugieren un plano/circuito */
-#hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image:
-        linear-gradient(rgba(148, 163, 184, 0.07) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(148, 163, 184, 0.07) 1px, transparent 1px);
-    background-size: 56px 56px;
-    mask-image: radial-gradient(ellipse 70% 60% at 50% 35%, #000 40%, transparent 100%);
-    -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 35%, #000 40%, transparent 100%);
-    animation: grid-drift 40s linear infinite;
-}
-
-@keyframes grid-drift {
-    from { background-position: 0 0, 0 0; }
-    to { background-position: 56px 56px, 56px 56px; }
-}
-
-/* Glow central azul, respirando suavemente */
-.hero-glow {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 640px;
-    height: 640px;
-    background: radial-gradient(circle, var(--primary-glow) 0%, transparent 70%);
-    filter: blur(10px);
-    pointer-events: none;
-    animation: glow-breathe 6s ease-in-out infinite;
-}
-
-@keyframes glow-breathe {
-    0%, 100% { opacity: 0.55; }
-    50% { opacity: 0.9; }
-}
+/* Eliminamos el grid tecnológico y el glow azul. 
+   En su lugar, un fondo limpio. Si quieres textura, se la añadimos con CSS grain en el body. */
 
 .hero-content {
     position: relative;
     z-index: 2;
-    max-width: 780px;
-    text-align: center;
+    max-width: 1160px;
+    width: 100%;
     margin: 0 auto;
+    text-align: left; /* Texto a la izquierda, nada centrado */
 }
 
+/* El eyebrow pasa de ser una "píldora" a un simple texto técnico */
 .hero-eyebrow {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    font-size: 0.82rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    font-weight: 400;
     color: var(--primary-light);
-    padding: 6px 14px;
-    border: 1px solid var(--border);
-    border-radius: 999px;
-    background: rgba(37, 99, 235, 0.08);
-    margin-bottom: 28px;
+    margin-bottom: 32px;
+    padding: 0; /* Quitamos el padding de píldora */
+    border: none; /* Quitamos el borde */
+    background: none; /* Quitamos el fondo */
+    text-transform: none;
+    letter-spacing: 0;
 }
 
+/* El punto se mantiene, pero más sutil */
 .hero-eyebrow .dot {
     width: 6px;
     height: 6px;
     border-radius: 50%;
     background: var(--primary-light);
-    box-shadow: 0 0 8px var(--primary-light);
+    box-shadow: none; /* Quitamos el resplandor */
 }
 
+/* El título: gigante, elegante, sin negrita extrema, sin degradado */
 .hero-title {
-    font-size: clamp(2.4rem, 5.5vw, 4rem);
-    font-weight: 800;
-    line-height: 1.1;
+    font-family: var(--font-serif); /* La Serif que añadimos en style.css */
+    font-size: clamp(3rem, 8vw, 6rem); /* Mucho más grande */
+    font-weight: 400; /* Peso normal, elegantemente delgado */
+    line-height: 1.0; /* Bien apretado */
     letter-spacing: -0.03em;
     color: var(--text-primary);
-    margin-bottom: 24px;
+    margin-bottom: 32px;
+    max-width: 900px; /* Para que no ocupe toda la pantalla */
 }
 
+/* En lugar de un degradado, usamos la Serif en cursiva para destacar palabras */
 .hero-title .accent {
-    background: linear-gradient(120deg, var(--primary-light), #60A5FA);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    background: none;
+    -webkit-background-clip: initial;
+    background-clip: initial;
+    color: var(--text-secondary); /* Color apagado para crear contraste tipográfico */
+    font-style: italic; /* ¡La magia está en la cursiva! */
 }
 
 .hero-subtitle {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     color: var(--text-secondary);
-    margin-bottom: 20px;
+    margin-bottom: 48px;
+    max-width: 580px; /* Limitamos el ancho para que sea cómodo de leer */
+    line-height: 1.6;
 }
 
-/* Tags de especialidad: Full Stack / Computer Vision / LLMs / Automation */
+/* Tags: cuadrados, minimalistas, tipo "código" */
 .hero-tags {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 40px;
+    gap: 8px;
+    margin-bottom: 48px;
 }
 
 .hero-tags span {
-    font-size: 0.85rem;
-    font-weight: 500;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
     color: var(--text-secondary);
-    padding: 6px 14px;
+    padding: 6px 10px;
     border: 1px solid var(--border);
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.02);
+    border-radius: var(--radius-sm); /* 4px, no 999px */
+    background: transparent;
 }
 
 .hero-actions {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
+    gap: 12px;
 }
 
-/* Entrada escalonada */
+/* Entrada escalonada: sutil, hacia arriba */
 .hero-content > * {
     opacity: 0;
-    transform: translateY(16px);
-    animation: hero-rise 0.7s ease forwards;
+    transform: translateY(12px); /* Menos distancia, más sutil */
+    animation: hero-rise 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards; /* Easing más moderno */
 }
 
-.hero-eyebrow { animation-delay: 0.05s; }
-.hero-title { animation-delay: 0.15s; }
-.hero-subtitle { animation-delay: 0.25s; }
-.hero-tags { animation-delay: 0.35s; }
-.hero-actions { animation-delay: 0.45s; }
+.hero-eyebrow { animation-delay: 0.1s; }
+.hero-title { animation-delay: 0.2s; }
+.hero-subtitle { animation-delay: 0.3s; }
+.hero-tags { animation-delay: 0.4s; }
+.hero-actions { animation-delay: 0.5s; }
 
 @keyframes hero-rise {
     to { opacity: 1; transform: translateY(0); }
 }
 
+/* Pista de scroll: la alineamos a la izquierda para acompañar el texto */
 .hero-scroll-cue {
     position: absolute;
     bottom: 32px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 24px; /* Cambiado de center a left */
+    font-family: var(--font-mono);
     font-size: 0.75rem;
     color: var(--text-secondary);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 8px;
-    opacity: 0.6;
+    opacity: 0.4;
+    display: none; /* Opcional: A veces menos es más. Si lo quieres quitar del todo, déjalo en none. Si lo quieres, cambia a flex. */
 }
 
 .hero-scroll-cue .line {
     width: 1px;
-    height: 28px;
-    background: linear-gradient(var(--text-secondary), transparent);
+    height: 24px;
+    background: var(--text-secondary);
     animation: scroll-cue 2s ease-in-out infinite;
 }
 

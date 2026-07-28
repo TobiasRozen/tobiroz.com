@@ -3,40 +3,42 @@
    Design tokens, reset, tipografia y componentes globales
    ============================================================ */
 
-/* --- Google Fonts: Inter (unica familia tipografica del sitio) --- */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+/* --- Google Fonts: Inter (cuerpo) + Fraunces (títulos) + JetBrains Mono (detalles) --- */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap');
 
 /* --- Design tokens --------------------------------------------------- */
 :root {
-    /* Superficies */
-    --bg-primary: #0B1120;
-    --bg-secondary: #111827;
-    --card-bg: #1E293B;
+    /* Superficies (Tonos cálidos en lugar de azulados) */
+    --bg-primary: #0F0E0C; /* Negro cálido */
+    --bg-secondary: #181613;
+    --card-bg: #1C1A17;
 
     /* Texto */
-    --text-primary: #F8FAFC;
-    --text-secondary: #94A3B8;
+    --text-primary: #EDEAE5; /* Blanco roto */
+    --text-secondary: #918B82; /* Gris cálido */
 
-    /* Acento */
-    --primary: #2563EB;
-    --primary-light: #3B82F6;
-    --primary-glow: rgba(37, 99, 235, 0.35);
+    /* Acento (Naranja terracota - cámbialo si prefieres otro) */
+    --primary: #E5693A;
+    --primary-light: #F08155;
+    --primary-glow: rgba(229, 105, 58, 0.15);
 
     /* Bordes */
-    --border: rgba(255, 255, 255, 0.08);
-    --border-hover: rgba(59, 130, 246, 0.4);
+    --border: #2A2724;
+    --border-hover: #44403A;
 
     /* Tipografia */
     --font-main: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-serif: 'Fraunces', Georgia, serif;
+    --font-mono: 'JetBrains Mono', monospace;
 
     /* Espaciado */
     --section-padding: 120px;
     --section-padding-mobile: 64px;
 
-    /* Bordes redondeados */
-    --radius-sm: 8px;
-    --radius-md: 14px;
-    --radius-lg: 20px;
+    /* Bordes redondeados (Menos redondeados = más serio/editorial) */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
 }
 
 /* --- Reset ------------------------------------------------------------ */
@@ -105,9 +107,10 @@ textarea:focus-visible {
 
 /* --- Tipografia general ------------------------------------------------ */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
+    font-family: var(--font-serif); /* ¡Añadimos Serif! */
+    font-weight: 400; /* Ligero y elegante */
     margin: 0;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
 }
 
 p {
@@ -137,16 +140,17 @@ p {
 
 .eyebrow {
     display: inline-block;
+    font-family: var(--font-mono);
     font-size: 0.8rem;
-    font-weight: 600;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
+    font-weight: 400;
     color: var(--primary-light);
     margin-bottom: 14px;
+    text-transform: none; /* Quitamos las mayúsculas */
+    letter-spacing: 0; /* Quitamos el espaciado exagerado */
 }
 
 .section-title {
-    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    font-size: clamp(2rem, 4vw, 3.2rem); /* Más grande */
     color: var(--text-primary);
     margin-bottom: 16px;
     text-align: left;
@@ -165,19 +169,18 @@ p {
 }
 
 /* --- Glass card: componente reutilizable ------------------------------ */
+/* --- Flat card: componente reutilizable ------------------------------ */
 .glass-card {
-    background: rgba(30, 41, 59, 0.45);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
+    background: var(--card-bg);
     border: 1px solid var(--border);
     border-radius: var(--radius-md);
-    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+    transition: border-color 0.3s ease;
+    /* Quitamos el backdrop-filter y las sombras */
 }
 
 .glass-card:hover {
-    transform: translateY(-4px);
     border-color: var(--border-hover);
-    box-shadow: 0 12px 40px rgba(37, 99, 235, 0.12);
+    transform: none; /* Quitamos el salto hacia arriba, muy de plantilla */
 }
 
 /* --- Botones ------------------------------------------------------------ */
@@ -186,23 +189,23 @@ p {
     align-items: center;
     justify-content: center;
     gap: 8px;
-    font-size: 0.95rem;
-    font-weight: 600;
-    padding: 13px 26px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 12px 24px;
     border-radius: var(--radius-sm);
     border: 1px solid transparent;
-    transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
 .btn-primary {
     background-color: var(--primary);
-    color: #ffffff;
+    color: #0F0E0C; /* Texto oscuro sobre el botón de color */
 }
 
 .btn-primary:hover {
     background-color: var(--primary-light);
-    box-shadow: 0 8px 24px var(--primary-glow);
-    transform: translateY(-2px);
+    box-shadow: none; /* Sin sombras brillantes */
+    transform: none;
 }
 
 .btn-outline {
@@ -213,8 +216,8 @@ p {
 
 .btn-outline:hover {
     border-color: var(--border-hover);
-    background-color: rgba(255, 255, 255, 0.03);
-    transform: translateY(-2px);
+    background-color: transparent;
+    transform: none;
 }
 
 .btn-ghost {
@@ -240,9 +243,7 @@ p {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(11, 17, 32, 0.75);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    background-color: rgba(15, 14, 12, 0.95); /* Fondo opaco, sin blur */
     border-bottom: 1px solid var(--border);
 }
 
