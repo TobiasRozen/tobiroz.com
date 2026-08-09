@@ -351,8 +351,8 @@ p {
     align-items: center;
     justify-content: space-between;
 
-    width: 74px;
-    height: 38px;
+    width: 68px;
+    height: 40px;
 
     padding: 4px;
     border: 1px solid var(--border);
@@ -400,7 +400,7 @@ p {
 
 /* Estado EN */
 .lang-switch[data-lang="en"] .lang-thumb {
-    transform: translateX(36px);
+    transform: translateX(27.5px);
 }
 
 /* Texto activo */

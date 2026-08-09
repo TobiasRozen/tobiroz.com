@@ -170,7 +170,7 @@ const I18N = {
         "exp3.desc": "Modelos propios de detección y fine-tuning para mejorar la precisión de detección en tiempo real.",
 
         "projects.eyebrow": "Proyectos",
-        "projects.title": "Productos que construí",
+        "projects.title": "Servicios que construí",
         "projects.desc": "De la idea al deploy: proyectos propios y para clientes.",
 
         "proj.apuntaria.name": "ApuntarIA",
@@ -204,8 +204,8 @@ const I18N = {
         "proj.nexium.cta": "Visitar sitio",
 
         "contact.eyebrow": "Contacto",
-        "contact.title": "Hablemos de tu proyecto",
-        "contact.desc": "Contame qué estás construyendo y en qué parte del proceso puedo sumar.",
+        "contact.title": "¿Necesitas contactarme?",
+        "contact.desc": "Si tienes alguna pregunta o necesitas ayuda con algo, no dudes en contactarme.",
         "contact.reply_label": "Respondo en",
         "contact.reply_value": "Menos de 48 horas",
         "contact.location_label": "Ubicación",
@@ -480,7 +480,7 @@ const I18N = {
         "exp3.desc": "Custom detection models and fine-tuning to improve real-time detection accuracy.",
 
         "projects.eyebrow": "Projects",
-        "projects.title": "Products I've built",
+        "projects.title": "Services I've built",
         "projects.desc": "From idea to deploy: personal and client projects.",
 
         "proj.apuntaria.name": "ApuntarIA",
@@ -514,8 +514,8 @@ const I18N = {
         "proj.nexium.cta": "Visit site",
 
         "contact.eyebrow": "Contact",
-        "contact.title": "Let's talk about your project",
-        "contact.desc": "Tell me what you're building and where I can help.",
+        "contact.title": "Do you need to contact me?",
+        "contact.desc": "If you have any questions or need help with something, don't hesitate to contact me.",
         "contact.reply_label": "I reply within",
         "contact.reply_value": "Less than 48 hours",
         "contact.location_label": "Location",
