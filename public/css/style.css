@@ -289,6 +289,36 @@ p {
     fill: var(--primary-light); 
 }
 
+.logo-cafecito-glow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: transparent;
+
+    /* Glow propio de Cafecito */
+    box-shadow: 0 0 12px #65abda;
+
+    transition: all 0.3s ease;
+}
+
+.logo-cafecito-glow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+}
+
+.logo-cafecito-glow:hover {
+    transform: scale(1.08);
+    box-shadow:
+        0 0 8px #65abda,
+        0 0 18px #65abda,
+        0 0 30px rgba(74, 162, 202, 0.6);
+}
 
 .logo-text {
     font-size: 1.05rem;
