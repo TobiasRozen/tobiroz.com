@@ -26,7 +26,7 @@ const I18N = {
         "hero.scroll": "Scroll",
 
         "about.eyebrow": "Sobre mí",
-        "about.title": "Ingeniería de software con foco en IA",
+        "about.title": "Desarrollador de software con foco en IA",
         "about.desc": "Diseño soluciones que combinan aplicaciones web modernas, visión artificial y modelos de lenguaje para resolver problemas reales, con la escalabilidad y el criterio técnico de un producto pensado para producción.",
         "about.fact1_label": "Formación",
         "about.fact1_value": "Tecnicatura Universitaria en Programación — UTN",
@@ -192,6 +192,11 @@ const I18N = {
         "proj.discord.problem": "Reduce la carga de moderación manual en comunidades grandes.",
         "proj.discord.desc": "Bots personalizados con sistema de tickets, reproducción de música, moderación automática y flujos de eventos.",
         "proj.discord.cta": "Ver detalle",
+
+        "proj.mylifestreaming.name": "My Life Streaming",
+        "proj.mylifestreaming.problem": "Juego para seleccionar tu propia aventura como streamer",
+        "proj.mylifestreaming.desc": "Juego interactivo donde los jugadores pueden crear y vivir su propia aventura como streamer.",
+        "proj.mylifestreaming.cta": "Visitar sitio",
 
         "proj.altomar.name": "Altomar",
         "proj.altomar.problem": "Sitio web para presentar el producto y su tecnología de detección.",
@@ -502,6 +507,11 @@ const I18N = {
         "proj.discord.problem": "Reduces manual moderation workload in large communities.",
         "proj.discord.desc": "Custom bots with ticket systems, music playback, automatic moderation, and event workflows.",
         "proj.discord.cta": "View details",
+
+        "proj.mylifestreaming.name": "My Life Streaming",
+        "proj.mylifestreaming.problem": "A platform for streamers to share their content and connect with their audience.",
+        "proj.mylifestreaming.desc": "Web platform that allows streamers to showcase their content, manage schedules, and interact with their community.",
+        "proj.mylifestreaming.cta": "Visit site",
 
         "proj.altomar.name": "Altomar",
         "proj.altomar.problem": "Website to present the product and its detection technology.",
