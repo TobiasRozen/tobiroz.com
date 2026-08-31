@@ -23,6 +23,7 @@ const I18N = {
         "hero.tag5": "Arquitectura Backend",
         "hero.cta_projects": "Ver proyectos",
         "hero.cta_contact": "Contactarme",
+        "hero.cta_cv": "Mi CV",
         "hero.scroll": "Scroll",
 
         "about.eyebrow": "Sobre mí",
@@ -338,6 +339,7 @@ const I18N = {
         "hero.tag5": "Backend Architecture",
         "hero.cta_projects": "View projects",
         "hero.cta_contact": "Contact me",
+        "hero.cta_cv": "My CV",
         "hero.scroll": "Scroll",
 
         "about.eyebrow": "About me",
