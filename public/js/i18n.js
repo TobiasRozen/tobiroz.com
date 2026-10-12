@@ -174,6 +174,12 @@ const I18N = {
         "projects.title": "Servicios que construí",
         "projects.desc": "De la idea al deploy: proyectos propios y para clientes.",
 
+        "proj.systemrooms.name": "System Rooms",
+        "proj.systemrooms.problem": "Centraliza la operación diaria de un hotel: habitaciones, check-in, check-out y caja.",
+        "proj.systemrooms.desc": "Sistema PMS (Property Management System) con arquitectura de tres capas contenerizada con Docker: Django REST + React/TypeScript + PostgreSQL. Desarrollado para ARVYNOX COMPANY junto a Edwin y Brandon.",
+        "proj.systemrooms.cta": "Ver detalle",
+        "proj.systemrooms.repo": "Repositorio",
+
         "proj.apuntaria.name": "ApuntarIA",
         "proj.apuntaria.problem": "Convierte clases y material extenso en apuntes claros y accionables.",
         "proj.apuntaria.desc": "Plataforma web que transforma clases y documentos en apuntes, resúmenes y material de estudio de forma automática.",
@@ -198,6 +204,11 @@ const I18N = {
         "proj.mylifestreaming.problem": "Juego para seleccionar tu propia aventura como streamer",
         "proj.mylifestreaming.desc": "Juego interactivo donde los jugadores pueden crear y vivir su propia aventura como streamer.",
         "proj.mylifestreaming.cta": "Visitar sitio",
+
+        "proj.soysole.name": "Soy Sole",
+        "proj.soysole.problem": "Sitio web para mostrar catálogo de productos de la marca",
+        "proj.soysole.desc": "Sitio web con catálogo de productos y sección de contacto para la marca Soy Sole, con integración de boton de comprar que redirige a WhatsApp para concretar la venta.",
+        "proj.soysole.cta": "Visitar sitio",
 
         "proj.altomar.name": "Altomar",
         "proj.altomar.problem": "Sitio web para presentar el producto y su tecnología de detección.",
@@ -489,6 +500,12 @@ const I18N = {
         "projects.eyebrow": "Projects",
         "projects.title": "Services I've built",
         "projects.desc": "From idea to deploy: personal and client projects.",
+
+        "proj.systemrooms.name": "System Rooms",
+        "proj.systemrooms.problem": "Centralizes the daily operations of a hotel: rooms, check-in, check-out and cash register.",
+        "proj.systemrooms.desc": "PMS (Property Management System) with a three-tier architecture containerized with Docker: Django REST + React/TypeScript + PostgreSQL. Built for ARVYNOX COMPANY alongside Edwin & Brandon.",
+        "proj.systemrooms.cta": "View details",
+        "proj.systemrooms.repo": "Repository",
 
         "proj.apuntaria.name": "ApuntarIA",
         "proj.apuntaria.problem": "Turns lengthy classes and materials into clear, actionable notes.",
