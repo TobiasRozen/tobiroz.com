@@ -1,0 +1,102 @@
+/* ============================================================
+   CONTACT.CSS — Formulario de contacto
+   ============================================================ */
+
+.contact-wrap {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 56px;
+    align-items: start;
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.contact-info-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-sm);
+    background: rgba(37, 99, 235, 0.1);
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-light);
+    flex-shrink: 0;
+}
+
+.contact-info-label {
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.contact-info-value {
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.contact-form {
+    padding: 36px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 13px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    color: var(--text-primary);
+    font-family: var(--font-main);
+    font-size: 0.95rem;
+    transition: border-color 0.25s ease, background-color 0.25s ease;
+}
+
+.form-control::placeholder {
+    color: #556074;
+}
+
+.form-control:focus {
+    border-color: var(--primary-light);
+    background: rgba(255, 255, 255, 0.05);
+    outline: none;
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form .btn {
+    width: 100%;
+    margin-top: 8px;
+    padding: 14px;
+}
+
+.form-status {
+    margin-top: 14px;
+    font-size: 0.85rem;
+    text-align: center;
+    min-height: 20px;
+}
+
+.form-status.success { color: #4ADE80; }
+.form-status.error { color: #F87171; }

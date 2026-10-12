@@ -1,0 +1,101 @@
+/* ============================================================
+   RESPONSIVE.CSS — Adaptaciones para tablet y mobile
+   ============================================================ */
+
+/* --- Tablet (<= 960px) --- */
+@media screen and (max-width: 960px) {
+    :root {
+        --section-padding: 80px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .objectives-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-wrap {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .project-card.featured {
+        flex-direction: column;
+    }
+
+    .project-card.featured .project-media {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        aspect-ratio: 16 / 9;
+    }
+}
+
+/* --- Mobile (<= 768px) --- */
+@media screen and (max-width: 768px) {
+    .section {
+        padding: var(--section-padding-mobile) 20px;
+    }
+
+    /* Navbar: colapsa a menu hamburguesa */
+    .nav-links {
+        position: fixed;
+        top: 64px;
+        right: 0;
+        width: 220px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        background: var(--bg-secondary);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-md);
+        padding: 16px;
+        transform: translateX(120%);
+        transition: transform 0.35s ease;
+    }
+
+    .nav-links.open {
+        transform: translateX(0);
+    }
+
+    .nav-links a {
+        padding: 10px 8px;
+        width: 100%;
+    }
+
+    .nav-cta {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .objectives-card {
+        grid-template-columns: 1fr;
+        padding: 28px 20px;
+    }
+
+    .stack-track-wrap {
+        padding-bottom: 260px;
+    }
+
+    .stack-detail-card {
+        bottom: 150px;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+}

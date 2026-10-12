@@ -1,0 +1,219 @@
+/* ============================================================
+   PROJECT-DETAIL.CSS — Paginas individuales de proyecto
+   Header de proyecto + grid de features + bloque de tecnologias
+   ============================================================ */
+
+/* Header superior de la pagina de proyecto (reemplaza al hero grande) */
+.project-hero {
+    position: relative;
+    padding: 160px 24px 72px;
+    background-color: var(--bg-primary);
+    overflow: hidden;
+    text-align: center;
+}
+
+.project-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(148, 163, 184, 0.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(148, 163, 184, 0.07) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: radial-gradient(ellipse 70% 60% at 50% 0%, #000 40%, transparent 100%);
+    -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 0%, #000 40%, transparent 100%);
+}
+
+.project-hero-inner {
+    position: relative;
+    z-index: 2;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+/* Glow azul respirando, igual que en el hero principal */
+.project-hero-glow {
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 520px;
+    height: 520px;
+    background: radial-gradient(circle, var(--primary-glow) 0%, transparent 70%);
+    filter: blur(10px);
+    pointer-events: none;
+    z-index: 1;
+    animation: project-glow-breathe 6s ease-in-out infinite;
+}
+
+@keyframes project-glow-breathe {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 0.85; }
+}
+
+/* Badge "eyebrow" identico en estilo al de la home */
+.project-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--primary-light);
+    padding: 6px 14px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: rgba(37, 99, 235, 0.08);
+    margin-bottom: 24px;
+}
+
+.project-eyebrow .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--primary-light);
+    box-shadow: 0 0 8px var(--primary-light);
+}
+
+/* Entrada escalonada: mismo patron de animacion que el hero principal */
+.project-hero-inner > * {
+    opacity: 0;
+    transform: translateY(16px);
+    animation: project-hero-rise 0.7s ease forwards;
+}
+
+.project-back { animation-delay: 0.05s; }
+.project-eyebrow { animation-delay: 0.12s; }
+.project-hero-title { animation-delay: 0.2s; }
+.project-hero-desc { animation-delay: 0.3s; }
+
+@keyframes project-hero-rise {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.project-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    margin-bottom: 28px;
+    transition: color 0.25s ease;
+}
+
+.project-back:hover {
+    color: var(--primary-light);
+}
+
+.project-hero-title {
+    font-size: clamp(1.9rem, 4vw, 2.8rem);
+    color: var(--text-primary);
+    margin-bottom: 18px;
+}
+
+.project-hero-desc {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    margin-bottom: 0;
+}
+
+/* Grid de features / capacidades del proyecto */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.feature-card {
+    padding: 28px 30px;
+}
+
+.feature-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-sm);
+    background: rgba(37, 99, 235, 0.1);
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-light);
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+}
+
+.feature-title {
+    font-size: 1.05rem;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+}
+
+.feature-desc {
+    font-size: 0.92rem;
+    margin: 0;
+}
+
+/* Bloque de tecnologias utilizadas */
+.tech-block {
+    text-align: center;
+    padding: 44px;
+}
+
+.tech-block-title {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--primary-light);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.tech-block-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tech-block-list span {
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
+}
+
+/* Nota de cierre del proyecto */
+.project-closing {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.project-closing p {
+    font-size: 1.02rem;
+    color: var(--text-secondary);
+}
+
+/* CTA de cierre para volver a proyectos o contactar */
+.project-cta {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 36px;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-hero {
+        padding: 130px 20px 56px;
+    }
+}

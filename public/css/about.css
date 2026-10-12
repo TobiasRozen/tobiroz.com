@@ -1,0 +1,111 @@
+/* ============================================================
+   ABOUT.CSS — Secciones "Sobre Mi" y "Objetivos" (Estilo Editorial)
+   ============================================================ */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px; /* Más espacio para que respire */
+    align-items: start;
+}
+
+.about-text .section-description {
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* Lista de datos clave */
+.about-facts {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border-top: 1px solid var(--border); /* Línea superior limpia */
+}
+
+.about-fact {
+    display: flex;
+    gap: 20px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+/* Iconos: Quitamos el fondo azul brillante, lo hacemos minimalista */
+.about-fact-icon {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-sm);
+    background: transparent; /* Sin fondo */
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+/* Etiquetas: Tipografía Mono, sin mayúsculas */
+.about-fact-label {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    text-transform: none; /* Quitamos mayúsculas */
+    letter-spacing: 0; /* Quitamos espaciado */
+    color: var(--text-secondary);
+    margin-bottom: 6px;
+}
+
+.about-fact-value {
+    font-family: var(--font-serif); /* Serif para contrastar */
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    line-height: 1.4;
+}
+
+/* Objetivos: bloque destacado */
+.objectives-card {
+    padding: 48px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas para que no esté tan saturado */
+    gap: 32px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+}
+
+.objectives-lead {
+    grid-column: 1 / -1;
+    font-family: var(--font-serif);
+    font-size: 1.4rem; /* Más grande, como una cita */
+    color: var(--text-primary);
+    max-width: 100%;
+    margin-bottom: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.objective-pillar {
+    padding: 0; /* Sin padding interno, usamos bordes */
+    border-top: 1px solid var(--border); /* Línea superior estilo índice */
+    padding-top: 20px;
+    background: transparent;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+    border-radius: 0;
+}
+
+.objective-pillar h4 {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--primary-light); /* Un toque de color */
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.objective-pillar p {
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.6;
+}
