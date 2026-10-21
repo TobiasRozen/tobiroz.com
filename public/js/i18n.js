@@ -356,6 +356,68 @@ const I18N = {
         "detection.tech_title": "Tecnologías utilizadas",
         "detection.closing": "Esta solución permite automatizar procesos de monitoreo, inspección y control mediante cámaras, transformando imágenes y videos en información útil para la toma de decisiones.",
 
+
+        /* ---- Página: My Life Streaming ---- */
+
+        /* --- Página Soy Sole --- */
+        "proj.soysole.name": "Soy Sole",
+        "proj.soysole.problem": "Sitio web para mostrar catálogo de productos de la marca",
+        "proj.soysole.desc": "Sitio web con catálogo de productos y sección de contacto para la marca Soy Sole, con integración de boton de comprar que redirige a WhatsApp para concretar la venta.",
+        "proj.soysole.cta": "Visitar sitio",
+
+        /* --- Dr. Carnes LP --- */
+        // Card del index
+        "proj.drcarnes.name": "Dr. Carnes",
+        "proj.drcarnes.problem": "E-commerce de carnes premium envasadas al vacío con panel de administración completo.",
+        "proj.drcarnes.desc": "Plataforma JAMStack sobre Firebase ($0 de costo operativo) con catálogo rotativo, carrito inteligente, checkout con transferencia y comprobante, integración con WhatsApp y seguimiento de pedidos en tiempo real.",
+        "proj.drcarnes.cta": "Ver detalle",
+        "proj.drcarnes.site": "Visitar sitio",
+
+        // Página de detalle — Hero
+        "drcarnes.eyebrow": "E-commerce · Firebase · Costo $0",
+        "drcarnes.hero_title": "Dr. Carnes",
+        "drcarnes.hero_desc": "E-commerce de cortes de carne premium envasados al vacío. Sistema estático (JAMStack) sobre Firebase con catálogo público, carrito inteligente, checkout con múltiples métodos de pago, integración con WhatsApp, envío de correos automáticos y un panel de administración completo. Costo operativo: $0.",
+
+        // Página de detalle — Features
+        "drcarnes.features_eyebrow": "Capacidades",
+        "drcarnes.features_title": "Qué resuelve la plataforma",
+
+        "drcarnes.f1_title": "Catálogo público",
+        "drcarnes.f1_desc": "Home con 4 cortes destacados que rotan automáticamente cada día, más catálogo completo con filtros y ordenamiento.",
+
+        "drcarnes.f2_title": "Carrito inteligente",
+        "drcarnes.f2_desc": "Detección de duplicados que permite sumar kilos o reemplazar. Los precios se calculan usando el precio efectivo con descuento aplicado.",
+
+        "drcarnes.f3_title": "Checkout con múltiples pagos",
+        "drcarnes.f3_desc": "Efectivo o transferencia bancaria. Si elige transferencia, se muestra un alias copiable y se exige la subida de comprobante.",
+
+        "drcarnes.f4_title": "Redirección a WhatsApp",
+        "drcarnes.f4_desc": "Al finalizar la compra se abre una pestaña con un loader elegante y redirige a WhatsApp con el resumen del pedido y el link del comprobante.",
+
+        "drcarnes.f5_title": "Seguimiento en vivo",
+        "drcarnes.f5_desc": "Botón neón parpadeante que muestra el estado del pedido en tiempo real: Pendiente → En preparación → En viaje → Entregado.",
+
+        "drcarnes.f6_title": "Panel de administración",
+        "drcarnes.f6_desc": "Acceso protegido por Firebase Auth con tabs de Pedidos y Productos. Dashboard en vivo con todos los pedidos entrantes.",
+
+        "drcarnes.f7_title": "Gestión de productos",
+        "drcarnes.f7_desc": "CRUD completo con soft delete (oculta sin borrar), sección de eliminados con reactivación, y soporte para ofertas con cálculo automático de descuento.",
+
+        "drcarnes.f8_title": "Emails automáticos",
+        "drcarnes.f8_desc": "Notificaciones de pedido enviadas automáticamente vía EmailJS (Free tier, 200 emails/mes) al confirmar la compra.",
+
+        // Página de detalle — Tecnologías
+        "drcarnes.tech_title": "Tecnologías utilizadas",
+
+        // Página de detalle — Infraestructura
+        "drcarnes.cost_eyebrow": "Infraestructura",
+        "drcarnes.cost_title": "$0 de costo operativo",
+        "drcarnes.cost_desc": "Toda la plataforma corre sobre el Plan Spark (Free Tier) de Firebase, EmailJS Free (200 emails/mes) y la API pública de WhatsApp vía wa.me. Sin servidores, sin bases de datos pagas, sin costos recurrentes.",
+
+        // Página de detalle — Cierre
+        "drcarnes.closing": "Dr. Carnes combina una experiencia de compra pulida (catálogo con rotación diaria, carrito con kilos, checkout con comprobante, seguimiento en vivo) con un panel de administración que cubre el ciclo completo del negocio. Todo con tecnologías web estándar y Firebase, sin frameworks ni servidores.",
+        "drcarnes.site_cta": "Visitar sitio",
+
         /* ---- Compartido entre las 4 páginas de proyecto ---- */
         "project.more": "Ver más proyectos",
         "project.talk": "Hablemos de tu proyecto",
@@ -706,6 +768,67 @@ const I18N = {
         "detection.f6_desc": "Automatic alerts when specific events, actions, or objects defined by the client are detected.",
         "detection.tech_title": "Technologies used",
         "detection.closing": "This solution automates monitoring, inspection, and control processes through cameras, turning images and video into useful information for decision-making.",
+
+        /* --- Página Soy Sole --- */
+        "proj.soysole.name": "Soy Sole",
+        "proj.soysole.problem": "Website showcasing the brand's product catalog.",
+        "proj.soysole.desc": "Website with product catalog and contact section for the Soy Sole brand, with a buy button that redirects to WhatsApp to complete the sale.",
+        "proj.soysole.cta": "Visit site",
+
+
+        /* --- Dr. Carnes LP --- */
+        // Card del index
+        "proj.drcarnes.name": "Dr. Carnes",
+        "proj.drcarnes.problem": "Premium vacuum-sealed meat e-commerce with a full admin panel.",
+        "proj.drcarnes.desc": "Firebase-based JAMStack platform ($0 operating cost) with rotating catalog, smart cart, bank-transfer checkout with receipt upload, WhatsApp integration and real-time order tracking.",
+        "proj.drcarnes.cta": "View detail",
+        "proj.drcarnes.site": "Visit site",
+
+        // Página de detalle — Hero
+        "drcarnes.eyebrow": "E-commerce · Firebase · $0 cost",
+        "drcarnes.hero_title": "Dr. Carnes",
+        "drcarnes.hero_desc": "Premium vacuum-sealed meat cut e-commerce. Static JAMStack system on Firebase with public catalog, smart cart, multi-method checkout, WhatsApp integration, automated email delivery and a full admin panel. Operating cost: $0.",
+
+        // Página de detalle — Features
+        "drcarnes.features_eyebrow": "Capabilities",
+        "drcarnes.features_title": "What the platform solves",
+
+        "drcarnes.f1_title": "Public catalog",
+        "drcarnes.f1_desc": "Home with 4 featured cuts that rotate daily, plus full catalog with filters and sorting.",
+
+        "drcarnes.f2_title": "Smart cart",
+        "drcarnes.f2_desc": "Duplicate detection that lets you add kilos or replace. Prices calculated using the effective discounted price.",
+
+        "drcarnes.f3_title": "Multi-method checkout",
+        "drcarnes.f3_desc": "Cash or bank transfer. If transfer is chosen, a copyable alias is shown and proof upload is required.",
+
+        "drcarnes.f4_title": "WhatsApp redirect",
+        "drcarnes.f4_desc": "On checkout a tab opens with an elegant loader and redirects to WhatsApp with the order summary and receipt link.",
+
+        "drcarnes.f5_title": "Live tracking",
+        "drcarnes.f5_desc": "Glowing neon button showing real-time order status: Pending → Preparing → On the way → Delivered.",
+
+        "drcarnes.f6_title": "Admin panel",
+        "drcarnes.f6_desc": "Firebase Auth-protected access with Orders and Products tabs. Live dashboard with all incoming orders.",
+
+        "drcarnes.f7_title": "Product management",
+        "drcarnes.f7_desc": "Full CRUD with soft delete (hide without deleting), a deleted section with reactivation, and discount support with automatic percentage calculation.",
+
+        "drcarnes.f8_title": "Automated emails",
+        "drcarnes.f8_desc": "Order notifications sent automatically via EmailJS (Free tier, 200 emails/month) on purchase confirmation.",
+
+        // Página de detalle — Tecnologías
+        "drcarnes.tech_title": "Technologies used",
+
+        // Página de detalle — Infraestructura
+        "drcarnes.cost_eyebrow": "Infrastructure",
+        "drcarnes.cost_title": "$0 operating cost",
+        "drcarnes.cost_desc": "The whole platform runs on Firebase's Spark (Free Tier), EmailJS Free (200 emails/month) and the public WhatsApp API via wa.me. No servers, no paid databases, no recurring costs.",
+
+        // Página de detalle — Cierre
+        "drcarnes.closing": "Dr. Carnes combines a polished buying experience (daily-rotating catalog, kilo-based cart, receipt-enabled checkout, live tracking) with an admin panel covering the full business cycle. All with standard web technologies and Firebase — no frameworks, no servers.",
+        "drcarnes.site_cta": "Visit site",
+
 
         /* ---- Shared across the 4 project pages ---- */
         "project.more": "View more projects",

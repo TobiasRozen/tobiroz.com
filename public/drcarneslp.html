@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dr. Carnes — E-commerce de carnes premium envasadas al vacío, desarrollado por Tobias Rozenfeld. JAMStack sobre Firebase con costo operativo $0.">
+    <title>Dr. Carnes — Proyecto de Tobias Rozenfeld</title>
+    <link rel="icon" href="https://pbs.twimg.com/profile_images/1069767367452966912/mgpfJsIv_400x400.jpg">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/project-detail.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="nav-wrap">
+            <a href="/" class="logo-link">
+                <span class="logo-mark"></span>
+                <span class="logo-text">Tobias Rozenfeld</span>
+            </a>
+            <nav class="nav-links">
+                <a href="/#about" data-i18n="nav.about">Sobre mí</a>
+                <a href="/#stack" data-i18n="nav.stack">Stack</a>
+                <a href="/#experience" data-i18n="nav.experience">Experiencia</a>
+                <a href="/#projects" data-i18n="nav.projects">Proyectos</a>
+                <a href="/#contact" data-i18n="nav.contact">Contacto</a>
+            </nav>
+            <button class="lang-switch" id="langSwitch" data-lang="es" aria-label="Cambiar idioma / Switch language">
+                <span class="lang-thumb"></span>
+                <span class="lang-option es">ES</span>
+                <span class="lang-option en">EN</span>
+            </button>
+            <a href="/#contact" class="btn btn-primary nav-cta" data-i18n="nav.cta">Contactarme</a>
+            <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO DE PROYECTO -->
+        <section class="project-hero">
+            <div class="project-hero-glow"></div>
+            <div class="project-hero-inner">
+                <span class="project-eyebrow"><span class="dot"></span> <span data-i18n="drcarnes.eyebrow">E-commerce · Firebase · Costo $0</span></span>
+                <h1 class="project-hero-title" data-i18n="drcarnes.hero_title">Dr. Carnes</h1>
+                <p class="project-hero-desc" data-i18n="drcarnes.hero_desc">
+                    E-commerce de cortes de carne premium envasados al vacío.
+                    Sistema estático (JAMStack) sobre Firebase con catálogo público,
+                    carrito inteligente, checkout con múltiples métodos de pago,
+                    integración con WhatsApp, envío de correos automáticos y un panel
+                    de administración completo para gestionar productos y pedidos.
+                    Costo operativo: $0.
+                </p>
+            </div>
+        </section>
+
+        <!-- FEATURES -->
+        <section class="section section-dark">
+            <div class="section-header reveal">
+                <span class="eyebrow" data-i18n="drcarnes.features_eyebrow">Capacidades</span>
+                <h2 class="section-title" data-i18n="drcarnes.features_title">Qué resuelve la plataforma</h2>
+            </div>
+
+            <div class="feature-grid">
+                <div class="glass-card feature-card reveal">
+                    <div class="feature-icon"><i class="fa-solid fa-store"></i></div>
+                    <h3 class="feature-title" data-i18n="drcarnes.f1_title">Catálogo público</h3>
+                    <p class="feature-desc" data-i18n="drcarnes.f1_desc">Home con 4 cortes destacados que rotan automáticamente cada día, más catálogo completo con filtros y ordenamiento.</p>
+                </div>
+                <div class="glass-card feature-card reveal">
+                    <div class="feature-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                    <h3 class="feature-title" data-i18n="drcarnes.f2_title">Carrito inteligente</h3>
+                    <p class="feature-desc" data-i18n="drcarnes.f2_desc">Detección de duplicados que permite sumar kilos o reemplazar. Los precios se calculan usando el precio efectivo con descuento aplicado.</p>
+                </div>
+                <div class="glass-card feature-card reveal">
+                    <div class="feature-icon"><i class="fa-solid fa-credit-card"></i></div>
+                    <h3 class="feature-title" data-i18n="drcarnes.f3_title">Checkout con múltiples pagos</h3>
+                    <p class="feature-desc" data-i18n="drcarnes.f3_desc">Efectivo o transferencia bancaria. Si elige transferencia, se muestra un alias copiable y se exige la subida de comprobante.</p>
+                </div>
+                <div class="glass-card feature-card reveal">
+                    <div class="feature-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                    <h3 class="feature-title" data-i18n="drcarnes.f4_title">Redirección a WhatsApp</h3>
+                    <p class="feature-desc" data-i18n="drcarnes.f4_desc">Al finalizar la compra se abre una pestaña con un loader elegante y redirige a WhatsApp con el resumen del pedido y el link del comprobante.</p>
+                </div>
+                <div class="glass-card feature-card reveal">
+                    <div class="feature-icon"><i class="fa-solid fa-satellite-dish"></i></div>
+                    <h3 class="feature-title" data-i18n="drcarnes.f5_title">Seguimiento en vivo</h3>
+                    <p class="feature-desc" data-i18n="drcarnes.f5_desc">Botón neón parpadeante que muestra el estado del pedido en tiempo real: Pendiente → En preparación → En viaje → Entregado.</p>
+                </div>
+                <div class="glass-card feature-card reveal">
+                    <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3 class="feature-title" data-i18n="drcarnes.f6_title">Panel de administración</h3>
+                    <p class="feature-desc" data-i18n="drcarnes.f6_desc">Acceso protegido por Firebase Auth con tabs de Pedidos y Productos. Dashboard en vivo con todos los pedidos entrantes.</p>
+                </div>
+                <div class="glass-card feature-card reveal">
+                    <div class="feature-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+                    <h3 class="feature-title" data-i18n="drcarnes.f7_title">Gestión de productos</h3>
+                    <p class="feature-desc" data-i18n="drcarnes.f7_desc">CRUD completo con soft delete (oculta sin borrar), sección de eliminados con reactivación, y soporte para ofertas con cálculo automático de descuento.</p>
+                </div>
+                <div class="glass-card feature-card reveal">
+                    <div class="feature-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <h3 class="feature-title" data-i18n="drcarnes.f8_title">Emails automáticos</h3>
+                    <p class="feature-desc" data-i18n="drcarnes.f8_desc">Notificaciones de pedido enviadas automáticamente vía EmailJS (Free tier, 200 emails/mes) al confirmar la compra.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECNOLOGÍAS -->
+        <section class="section section-secondary">
+            <div class="glass-card tech-block reveal">
+                <div class="tech-block-title" data-i18n="drcarnes.tech_title">Tecnologías utilizadas</div>
+                <div class="tech-block-list">
+                    <span>HTML5</span><span>CSS3</span><span>Vanilla JavaScript</span>
+                    <span>Firebase Hosting</span><span>Cloud Firestore</span><span>Firebase Auth</span>
+                    <span>EmailJS</span><span>ImgBB API</span><span>WhatsApp API (wa.me)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- INFRAESTRUCTURA / COSTO $0 -->
+        <section class="section section-dark">
+            <div class="section-header reveal">
+                <span class="eyebrow" data-i18n="drcarnes.cost_eyebrow">Infraestructura</span>
+                <h2 class="section-title" data-i18n="drcarnes.cost_title">$0 de costo operativo</h2>
+            </div>
+            <div class="project-closing reveal">
+                <p data-i18n="drcarnes.cost_desc">
+                    Toda la plataforma corre sobre el <strong>Plan Spark (Free Tier) de Firebase</strong>,
+                    EmailJS Free (200 emails/mes) y la API pública de WhatsApp vía <code>wa.me</code>.
+                    Sin servidores, sin bases de datos pagas, sin costos recurrentes: el proyecto
+                    demuestra que un e-commerce completo puede sostenerse con infraestructura gratuita.
+                </p>
+            </div>
+        </section>
+
+        <!-- CIERRE -->
+        <section class="section section-secondary">
+            <div class="project-closing reveal">
+                <p data-i18n="drcarnes.closing">
+                    Dr. Carnes combina una experiencia de compra pulida (catálogo con rotación diaria,
+                    carrito con kilos, checkout con comprobante, seguimiento en vivo) con un panel
+                    de administración que cubre el ciclo completo del negocio. Todo con tecnologías
+                    web estándar y Firebase, sin frameworks ni servidores.
+                </p>
+                <div class="project-cta">
+                    <a href="https://drcarneslp.web.app"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn btn-primary">
+                        <i class="fa-solid fa-globe" style="margin-right:8px;"></i>
+                        <span data-i18n="drcarnes.site_cta">Visitar sitio</span>
+                    </a>
+                    <a href="/#projects" class="btn btn-outline" data-i18n="project.more">Ver más proyectos</a>
+                    <a href="/#contact" class="btn btn-outline" data-i18n="project.talk">Hablemos de tu proyecto</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="logo-mark"></span>
+                &copy; <span id="footer-year">2026</span> Tobias Rozenfeld
+                <span class="footer-separator">|</span>
+                <a href="https://www.linkedin.com/in/tobi-roz/" target="_blank" rel="noopener noreferrer" class="logo-linkedin-glow" aria-label="Visitar mi perfil de LinkedIn">
+                    <svg xmlns="http://w3.org" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+                <span>Linkedin</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/animations.js"></script>
+    <script>
+        document.getElementById("footer-year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
